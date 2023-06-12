@@ -13,7 +13,7 @@ const Invoice = () => {
 
   function getOrder() {
     axios
-      .get(`http://localhost:3000/dashboard/${id}`)
+      .get(`https://manz-orders-server.onrender.com/dashboard/${id}`)
       .then(function (response) {
         setDetails(response.data);
         console.log(response.data);

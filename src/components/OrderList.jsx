@@ -11,7 +11,7 @@ function OrderList() {
 
   function getOrder() {
     axios
-      .get("http://localhost:3000/dashboard")
+      .get("https://manz-orders-server.onrender.com/dashboard")
       .then(function (response) {
         console.log(response.data);
         setDetails(response.data);

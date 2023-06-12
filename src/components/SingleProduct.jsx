@@ -20,7 +20,7 @@ const SingleProduct = ({ order }) => {
   };
 
   function getProduct() {
-    axios.get(`http://localhost:3000/products/${id}`).then(function (response) {
+    axios.get(`https://manz-orders-server.onrender.com/products/${id}`).then(function (response) {
       console.log(response.data);
       setProducts(response.data);
     });

@@ -19,13 +19,13 @@ function Home() {
   // console.log("back");
   // console.log(order);
   function getColor() {
-    axios.get("http://localhost:3000/color").then(function (response) {
+    axios.get("https://manz-orders-server.onrender.com/color").then(function (response) {
       console.log(response.data);
       setColors(response.data);
     });
   }
   function getProduct() {
-    axios.get("http://localhost:3000/products").then(function (response) {
+    axios.get("https://manz-orders-server.onrender.com/products").then(function (response) {
       console.log(response.data);
       setProducts(response.data);
     });
