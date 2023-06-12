@@ -1,0 +1,103 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+.threed {
+  background: radial-gradient(black, transparent 60%);
+  transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); 
+  opacity: 0.2;
+}
+
+
+:root {
+  --color-light: rgb(255, 255, 255);
+  --color-mid: rgb(22, 104, 220);
+  --color-dark: rgb(255, 255, 255);
+}
+.iconDiv {
+  /* height: 36px; */
+  width: 20px;
+  /* margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 4px;
+  padding: 4px;
+  border-radius: 8px; */
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  color: white;
+  transition: width 300ms ease-in-out 0s, background-color 300ms linear 200ms;
+}
+.iconSVG {
+  aspect-ratio: 1 / 1;
+}
+.iconDiv:hover,
+.iconDiv:focus-visible {
+  width: 142px;
+  /* background-color: var(--color-mid); */
+  transition: width 300ms ease-in-out 0s, background-color 100ms linear 0s;
+}
+.iconDiv:focus-visible {
+  outline: 1px solid var(--color-mid);
+  outline-offset: 4px;
+}
+.iconDiv:active {
+  opacity: 0.9;
+}
+.iconDiv::after {
+  content: attr(title);
+  margin-left: 12px;
+  animation: fadeIn 600ms linear forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
