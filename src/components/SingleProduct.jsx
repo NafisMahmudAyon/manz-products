@@ -20,7 +20,7 @@ const SingleProduct = ({ order }) => {
   };
 
   function getProduct() {
-    axios.get(`../db.json`).then(function (response) {
+    axios.get(`https://manz.nafisbd.com/db.json`).then(function (response) {
       console.log(response.data.products);
       setProducts(response.data.products[`${id}`]);
     });

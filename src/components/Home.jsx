@@ -21,7 +21,7 @@ function Home() {
   function getColor() {
     axios
       // .get("https://manz-orders-server.onrender.com/color")
-      .get("../db.json")
+      .get("https://manz.nafisbd.com/db.json")
       .then(function (response) {
         console.log(response.data.color);
         setColors(response.data.color);
@@ -29,7 +29,7 @@ function Home() {
   }
   function getProduct() {
     // axios.get("https://manz-orders-server.onrender.com/products").then(function (response) {
-    axios.get("../db.json").then(function (response) {
+    axios.get("https://manz.nafisbd.com/db.json").then(function (response) {
       console.log("Hello1");
       console.log(response.data.products);
       console.log("Hello2");

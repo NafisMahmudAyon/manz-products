@@ -15,7 +15,7 @@ const Invoice = () => {
   function getOrder() {
     axios
       // .get(`https://manz-orders-server.onrender.com/dashboard/${id}`)
-      .get(`http://127.0.0.1:5173/db.json`)
+      .get(`https://manz.nafisbd.com/db.json`)
       .then(function (response) {
         setDetails(response.data.dashboard[`${ids}`]);
         console.log("asdasd");
