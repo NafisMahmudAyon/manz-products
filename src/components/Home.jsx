@@ -19,15 +19,21 @@ function Home() {
   // console.log("back");
   // console.log(order);
   function getColor() {
-    axios.get("https://manz-orders-server.onrender.com/color").then(function (response) {
-      console.log(response.data);
-      setColors(response.data);
-    });
+    axios
+      // .get("https://manz-orders-server.onrender.com/color")
+      .get("../db.json")
+      .then(function (response) {
+        console.log(response.data.color);
+        setColors(response.data.color);
+      });
   }
   function getProduct() {
-    axios.get("https://manz-orders-server.onrender.com/products").then(function (response) {
-      console.log(response.data);
-      setProducts(response.data);
+    // axios.get("https://manz-orders-server.onrender.com/products").then(function (response) {
+    axios.get("../db.json").then(function (response) {
+      console.log("Hello1");
+      console.log(response.data.products);
+      console.log("Hello2");
+      setProducts(response.data.products);
     });
   }
 

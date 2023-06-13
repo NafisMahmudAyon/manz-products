@@ -6,6 +6,7 @@ import ProductList from "./ProductList";
 const Invoice = () => {
   const [details, setDetails] = useState([]);
   const { id } = useParams();
+  const ids = id - 1;
 
   useEffect(() => {
     getOrder();
@@ -13,10 +14,12 @@ const Invoice = () => {
 
   function getOrder() {
     axios
-      .get(`https://manz-orders-server.onrender.com/dashboard/${id}`)
+      // .get(`https://manz-orders-server.onrender.com/dashboard/${id}`)
+      .get(`http://127.0.0.1:5173/db.json`)
       .then(function (response) {
-        setDetails(response.data);
-        console.log(response.data);
+        setDetails(response.data.dashboard[`${ids}`]);
+        console.log("asdasd");
+        console.log(response.data.dashboard[`${ids}`]);
       });
   }
   // function getProducts() {
@@ -43,7 +46,13 @@ const Invoice = () => {
       <div className="w-[80%] sm:w-[90%] md:w-[90%] my-14 sm:my-8 border sm:border-none py-10 sm:py-2 max-h-[80%] relative">
         <div className="absolute top-6 left-6">
           {" "}
-          <Link to="/invoice" className="flex gap-3 items-center px-5 py-2 relative text-lg font-semibold hover:text-white hover:bg-sky-600 transition-all duration-300  bg-sky-500 rounded-full "> <img src="/back.png" alt="" className="w-8"/> Back</Link>{" "}
+          <Link
+            to="/invoice"
+            className="flex gap-3 items-center px-5 py-2 relative text-lg font-semibold hover:text-white hover:bg-sky-600 transition-all duration-300  bg-sky-500 rounded-full "
+          >
+            {" "}
+            <img src="/back.png" alt="" className="w-8" /> Back
+          </Link>{" "}
         </div>
         <div className=" flex flex-col items-center">
           <img
@@ -89,7 +98,7 @@ const Invoice = () => {
           </div>
           <div className="w-full flex justify-center pt-10">
             <div className="w-[90%] sm:w-full">
-              <ProductList id={id} />
+              <ProductList id={ids} />
             </div>
           </div>
           {/* after product details  */}
@@ -142,15 +151,11 @@ const Invoice = () => {
             <div className="px-2">
               <span>📞</span> 017X-XXXXXXX
             </div>
-            <div className="px-2 bg-sky-500 font-semibold sm:hidden">
-              |
-            </div>
+            <div className="px-2 bg-sky-500 font-semibold sm:hidden">|</div>
             <div className="px-2">
               <span>🏬</span> Dhaka, Bangladesh
             </div>
-            <div className="px-2 bg-sky-500 font-semibold sm:hidden">
-              |
-            </div>
+            <div className="px-2 bg-sky-500 font-semibold sm:hidden">|</div>
             <div className="px-2">
               <span>🌐</span>
               <a

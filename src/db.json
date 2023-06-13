@@ -53,7 +53,7 @@
     ],
     "dashboard": [
         {
-            "id": "1",
+            "id": "1000",
             "orderNo": "1000",
             "customerName": "Name 1",
             "orderDate": "02/02/2023",
@@ -71,7 +71,7 @@
             "trackID": "1245",
             "subTotal": "2000",
             "tax": "0.00",
-            "products": [
+            "products-1000": [
                 {
                     "id": 1,
                     "image": "https://i.ibb.co/nsMn8s2/pdt.png",
@@ -99,7 +99,7 @@
             ]
         },
         {
-            "id": "2",
+            "id": "1001",
             "orderNo": "1001",
             "customerName": "Name 2",
             "orderDate": "02/02/2023",
@@ -116,20 +116,10 @@
             "transactionID": "ABC123",
             "trackID": "1245",
             "subTotal": "2000",
-            "tax": "0.00",
-            "products": [
-                {
-                    "id": 1,
-                    "image": "https://i.ibb.co/nsMn8s2/pdt.png",
-                    "name": "Product 1",
-                    "price": "200",
-                    "quantity": "1",
-                    "total": "200"
-                }
-            ]
+            "tax": "0.00"
         },
         {
-            "id": "3",
+            "id": "1002",
             "orderNo": "1002",
             "customerName": "Name 3",
             "orderDate": "03/03/2023",
@@ -146,25 +136,7 @@
             "transactionID": "DEF456",
             "trackID": "1246",
             "subTotal": "3000",
-            "tax": "0.00",
-            "products": [
-                {
-                    "id": 1,
-                    "image": "https://i.ibb.co/nsMn8s2/pdt.png",
-                    "name": "Product 1",
-                    "price": "200",
-                    "quantity": "1",
-                    "total": "200"
-                },
-                {
-                    "id": 2,
-                    "image": "/pdt.png",
-                    "name": "Product 2",
-                    "price": "200",
-                    "quantity": "3",
-                    "total": "200"
-                }
-            ]
+            "tax": "0.00"
         }
     ],
     "products-1000": [

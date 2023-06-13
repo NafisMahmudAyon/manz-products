@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const SingleProduct = ({ order }) => {
   const [products, setProducts] = useState([]);
-  const id = order;
+  const id = order - 1;
   // const [value, setValue] = useState('2');
   // setValue(orders);
   // console.log(props.orders);
@@ -20,9 +20,9 @@ const SingleProduct = ({ order }) => {
   };
 
   function getProduct() {
-    axios.get(`https://manz-orders-server.onrender.com/products/${id}`).then(function (response) {
-      console.log(response.data);
-      setProducts(response.data);
+    axios.get(`../db.json`).then(function (response) {
+      console.log(response.data.products);
+      setProducts(response.data.products[`${id}`]);
     });
   }
   const SVGa = (props) => (

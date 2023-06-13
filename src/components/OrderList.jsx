@@ -9,12 +9,19 @@ function OrderList() {
     getOrder();
   }, []);
 
+  // function getProduct() {
+  //   axios.get(`../db.json`).then(function (response) {
+  //     console.log(response.data.products);
+  //     setProducts(response.data.products[`${id}`]);
+  //   });
+  // }
+
   function getOrder() {
-    axios
-      .get("https://manz-orders-server.onrender.com/dashboard")
-      .then(function (response) {
-        console.log(response.data);
-        setDetails(response.data);
+    // .get("https://manz-orders-server.onrender.com/dashboard")
+    axios.get(`../db.json`).then(function (response) {
+        console.log("ahaha");
+        console.log(response.data.dashboard);
+        setDetails(response.data.dashboard);
       });
   }
   return (
