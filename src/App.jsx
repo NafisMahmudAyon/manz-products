@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Invoice from "./components/Invoice";
 import OrderList from "./components/OrderList";
-import Data from "./db.json";
 // import Invoice from "./components/Invoice";
 
 function App() {
@@ -16,10 +15,9 @@ function App() {
       </nav> */}
 
       <Routes>
-        <Route index element={ <Home /> } />
-        <Route path="invoice/" element={ <OrderList /> } />
+        <Route index element={<Home />} />
+        <Route path="invoice/" element={<OrderList />} />
         <Route path="invoice/order/:id/" element={<Invoice />} />
-        <Route path="/data" element={<Data />} />
       </Routes>
     </BrowserRouter>
   );
