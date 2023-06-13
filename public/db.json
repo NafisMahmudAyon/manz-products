@@ -1,0 +1,224 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "T-Shirt-1",
+            "category": "T-Shirts",
+            "productCode": "1010",
+            "description": "T-Shirt",
+            "price": "400",
+            "in_stock": 1,
+            "status": "Available",
+            "background": "red",
+            "image": "/pdt1.png"
+        },
+        {
+            "id": "2",
+            "name": "T-Shirt-2",
+            "category": "T-Shirts",
+            "productCode": "1011",
+            "description": "T-Shirt",
+            "price": "450",
+            "in_stock": 0,
+            "status": "Not Available",
+            "background": "black",
+            "image": "/pdt2.png"
+        },
+        {
+            "id": "3",
+            "name": "T-Shirt-3",
+            "category": "T-Shirts",
+            "productCode": "1012",
+            "description": "T-Shirt",
+            "price": "350",
+            "in_stock": 1,
+            "status": "Available",
+            "background": "red",
+            "image": "/pdt3.png"
+        }
+    ],
+    "color": [
+        {
+            "id": 1,
+            "color": "red"
+        },
+        {
+            "id": 2,
+            "color": "blue"
+        },
+        {
+            "id": 3,
+            "color": "black"
+        }
+    ],
+    "dashboard": [
+        {
+            "id": "1",
+            "orderNo": "1000",
+            "customerName": "Name 1",
+            "orderDate": "02/02/2023",
+            "expectedDate": "05/02/2023",
+            "deliveryDate": "03/02/2023",
+            "status": "Delivered",
+            "payment": "COD",
+            "address": "Baldipukur Bazar, Baldipukur, Mithapukur, Rangpur",
+            "phone": "017X-XXXXXXX",
+            "invoiceNo": "1000",
+            "total": "2000",
+            "payMethod": "COD",
+            "payPhone": "",
+            "transactionID": "",
+            "trackID": "1245",
+            "subTotal": "2000",
+            "tax": "0.00",
+            "products": [
+                {
+                    "id": 1,
+                    "image": "https://i.ibb.co/nsMn8s2/pdt.png",
+                    "name": "Product 1",
+                    "price": "200",
+                    "quantity": "1",
+                    "total": "200"
+                },
+                {
+                    "id": 2,
+                    "image": "/pdt.png",
+                    "name": "Product 2",
+                    "price": "200",
+                    "quantity": "3",
+                    "total": "200"
+                },
+                {
+                    "id": 3,
+                    "image": "/pdt.png",
+                    "name": "Product 3",
+                    "price": "200",
+                    "quantity": "2",
+                    "total": "200"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "orderNo": "1001",
+            "customerName": "Name 2",
+            "orderDate": "02/02/2023",
+            "expectedDate": "05/02/2023",
+            "deliveryDate": "03/02/2023",
+            "status": "Processing",
+            "payment": "Paid",
+            "address": "Baldipukur Bazar, Baldipukur, Mithapukur, Rangpur",
+            "phone": "017X-XXXXXXX",
+            "invoiceNo": "1001",
+            "total": "2000",
+            "payMethod": "Bkash",
+            "payPhone": "017X-XXXXXXXX",
+            "transactionID": "ABC123",
+            "trackID": "1245",
+            "subTotal": "2000",
+            "tax": "0.00",
+            "products": [
+                {
+                    "id": 1,
+                    "image": "https://i.ibb.co/nsMn8s2/pdt.png",
+                    "name": "Product 1",
+                    "price": "200",
+                    "quantity": "1",
+                    "total": "200"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "orderNo": "1002",
+            "customerName": "Name 3",
+            "orderDate": "03/03/2023",
+            "expectedDate": "05/03/2023",
+            "deliveryDate": "03/03/2023",
+            "status": "On The Way",
+            "payment": "Paid",
+            "address": "Baldipukur Bazar, Baldipukur, Mithapukur, Rangpur",
+            "phone": "017X-XXXXXXX",
+            "invoiceNo": "1002",
+            "total": "3000",
+            "payMethod": "Bkash",
+            "payPhone": "017X-XXXXXXXX",
+            "transactionID": "DEF456",
+            "trackID": "1246",
+            "subTotal": "3000",
+            "tax": "0.00",
+            "products": [
+                {
+                    "id": 1,
+                    "image": "https://i.ibb.co/nsMn8s2/pdt.png",
+                    "name": "Product 1",
+                    "price": "200",
+                    "quantity": "1",
+                    "total": "200"
+                },
+                {
+                    "id": 2,
+                    "image": "/pdt.png",
+                    "name": "Product 2",
+                    "price": "200",
+                    "quantity": "3",
+                    "total": "200"
+                }
+            ]
+        }
+    ],
+    "products-1000": [
+        {
+            "id": 1,
+            "image": "https://i.ibb.co/nsMn8s2/pdt.png",
+            "name": "Product 1",
+            "price": "200",
+            "quantity": "1",
+            "total": "200"
+        },
+        {
+            "id": 2,
+            "image": "/pdt.png",
+            "name": "Product 2",
+            "price": "200",
+            "quantity": "3",
+            "total": "200"
+        },
+        {
+            "id": 3,
+            "image": "/pdt.png",
+            "name": "Product 3",
+            "price": "200",
+            "quantity": "2",
+            "total": "200"
+        }
+    ],
+    "products-1001": [
+        {
+            "id": 1,
+            "image": "https://i.ibb.co/nsMn8s2/pdt.png",
+            "name": "Product 1",
+            "price": "200",
+            "quantity": "1",
+            "total": "200"
+        }
+    ],
+    "products-1002": [
+        {
+            "id": 1,
+            "image": "https://i.ibb.co/nsMn8s2/pdt.png",
+            "name": "Product 1",
+            "price": "200",
+            "quantity": "1",
+            "total": "200"
+        },
+        {
+            "id": 2,
+            "image": "/pdt.png",
+            "name": "Product 2",
+            "price": "200",
+            "quantity": "3",
+            "total": "200"
+        }
+    ]
+}
