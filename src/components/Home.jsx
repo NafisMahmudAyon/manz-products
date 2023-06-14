@@ -22,8 +22,8 @@ function Home() {
       // .get("https://manz.nafisbd.com/db.json")
       .get("../db.json")
       .then(function (response) {
-        console.log(response.data.color);
-        setColors(response.data.color);
+        console.log(response.data.colors);
+        setColors(response.data.colors);
       });
   }
   function getProduct() {
@@ -174,13 +174,13 @@ function Home() {
         <div className="p-24 flex flex-wrap items-center justify-center overflow-auto overflow-x-hidden ">
           {Array.isArray(products)
             ? products.map((product, index) => {
-                const color = colors[index % colors.length];
+                const color = colors?.[index % colors.length];
                 const stock = product.in_stock;
                 console.log(stock);
                 return (
                   <div
                     key={index}
-                    style={{ backgroundColor: color.color }}
+                    style={{ backgroundColor: color?.color }}
                     className="flex-shrink-0 m-6 relative overflow-hidden  rounded-lg max-w-xs shadow-lg"
                   >
                     {/* <button onClick={() => setOrder(product.id)}> */}
@@ -225,10 +225,10 @@ function Home() {
                           <span className="block font-semibold text-xl">
                             {product.name}
                           </span>
-                          <button className=" z-20 bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">
+                          <div className=" z-20 bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">
                             <span className="font-black text-[12px]">৳</span>{" "}
                             {product.price}
-                          </button>
+                          </div>
                         </div>
                       </div>
                     </button>

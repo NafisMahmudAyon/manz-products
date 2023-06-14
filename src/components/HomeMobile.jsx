@@ -7,7 +7,7 @@ import SingleProductMobile from "./SingleProductMobile";
 // import SingleProductMobile from "./SingleProductMobile";
 
 function HomeMobile() {
-  const [orders, setOrders] = useState("");
+  const [orders, setOrders] = useState("1");
   const [products, setProducts] = useState([]);
 
   const [colors, setColors] = useState([]);
@@ -23,7 +23,7 @@ function HomeMobile() {
       // .get("https://manz.nafisbd.com/db.json")
       .get("../db.json")
       .then(function (response) {
-        setColors(response.data.color);
+        setColors(response.data.colors);
       });
   }
   function getProduct() {
@@ -104,13 +104,14 @@ function HomeMobile() {
         <div className="p-18 flex flex-wrap items-center justify-center overflow-auto overflow-x-hidden ">
           {Array.isArray(products)
             ? products.map((product, index) => {
-                const color = colors[index % colors.length];
+              // const length = colors?.length();
+                const color = colors?.[index % colors.length];
                 const stock = product.in_stock;
                 // const productId = product.id;
                 return (
                   <div
                     key={index}
-                    style={{ backgroundColor: color.color }}
+                    style={{ backgroundColor: color?.color }}
                     className="flex-shrink-0 m-6 relative overflow-hidden  rounded-lg max-w-xs shadow-lg"
                   >
                     
