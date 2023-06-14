@@ -3,9 +3,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const SingleProduct = ({ order }) => {
+const SingleProductMobile = ({ orders }) => {
   const [products, setProducts] = useState([]);
-  const id = order - 1;
+  const id = orders - 1;
   // const [value, setValue] = useState('2');
   // setValue(orders);
   // console.log(props.orders);
@@ -57,8 +57,8 @@ const SingleProduct = ({ order }) => {
   );
   
   return (
-    <div className="flex w-[100%] justify-center ">
-      <div className=" px-24 sm:px-4 mt-24 flex  sm:flex-col max-w-[1024px] min-h-[300px]  ">
+    <div className="flex w-[100%] justify-center">
+      <div className=" px-24 sm:px-4 mt-24 flex  sm:flex-col max-w-[1024px] min-h-[300px] ">
         <div className="h-full w-1/2 sm:w-full relative overflow-hidden bg-sky-500 drop-shadow-md drop-shadow-sky-700 rounded-l-lg sm:rounded-tr-lg sm:rounded-bl-none sm:rounded-tl-lg ">
           <SVGa className="absolute top-[100px]" />
           <h1 className="text-7xl sm:text-3xl text-slate-800 absolute top-5 left-5 font-bold opacity-60">
@@ -102,9 +102,9 @@ const SingleProduct = ({ order }) => {
           )}
 
           <div className="flex justify-between pr-6">
-            <p className="text-5xl text-slate-400 font-bold">
+            <p className="text-3xl text-slate-400 font-bold">
               {" "}
-              <span className="font-black text-2xl">৳</span> {products.price}{" "}
+              <span className="font-black text-xl">৳</span> {products.price}{" "}
             </p>
             <div className="p-[2px] border-2 border-sky-500 rounded-full">
               <button
@@ -121,4 +121,4 @@ const SingleProduct = ({ order }) => {
   );
 };
 
-export default SingleProduct;
+export default SingleProductMobile;

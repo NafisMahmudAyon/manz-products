@@ -12,7 +12,8 @@ const ProductList = (props) => {
 
   function getProducts() {
     // axios.get(`https://manz-orders-server.onrender.com/products-${id}`).then(function (response) {
-    axios.get(`https://manz.nafisbd.com/db.json`).then(function (response) {
+    // axios.get(`https://manz.nafisbd.com/db.json`).then(function (response) {
+    axios.get(`/db.json`).then(function (response) {
       setProducts(response.data.dashboard[`${id}`].products);
       console.log("hell");
       console.log(response.data.dashboard[`${id}`].products);

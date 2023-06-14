@@ -18,7 +18,8 @@ function OrderList() {
 
   function getOrder() {
     // .get("https://manz-orders-server.onrender.com/dashboard")
-    axios.get(`https://manz.nafisbd.com/db.json`).then(function (response) {
+    // axios.get(`https://manz.nafisbd.com/db.json`).then(function (response) {
+    axios.get(`/db.json`).then(function (response) {
         console.log("ahaha");
         console.log(response.data.dashboard);
         setDetails(response.data.dashboard);

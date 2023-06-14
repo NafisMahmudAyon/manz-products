@@ -1,8 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import OrderList from "./components/OrderList";
-import Home from "./components/Home";
+// import Home from "./components/Home";
 import Invoice from "./components/Invoice";
 import OrderList from "./components/OrderList";
+// import HomeMobile from "./components/HomeMobile";
+import HomePage from "./components/HomePage";
 // import Invoice from "./components/Invoice";
 
 function App() {
@@ -15,7 +17,7 @@ function App() {
       </nav> */}
 
       <Routes>
-        <Route index element={<Home />} />
+        <Route index element={<HomePage />} />
         <Route path="invoice/" element={<OrderList />} />
         <Route path="invoice/order/:id/" element={<Invoice />} />
       </Routes>
