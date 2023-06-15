@@ -10,7 +10,25 @@
             "in_stock": 1,
             "status": "Available",
             "background": "red",
-            "image": "/pdt1.png"
+            "image": "/pdt1.png",
+            "images": [
+                {
+                    "id": 1,
+                    "link": "https://i.ibb.co/ctqDbv2/pngegg-5.png"
+                },
+                {
+                    "id": 2,
+                    "link": "https://i.ibb.co/pvgg4n3/pngegg-4.png"
+                },
+                {
+                    "id": 3,
+                    "link": "https://i.ibb.co/c35P2B5/pngegg-3.png"
+                },
+                {
+                    "id": 4,
+                    "link": "https://i.ibb.co/h8jsRX6/pngegg-2.png"
+                }
+            ]
         },
         {
             "id": "2",
@@ -22,7 +40,25 @@
             "in_stock": 0,
             "status": "Not Available",
             "background": "black",
-            "image": "/pdt2.png"
+            "image": "/pdt2.png",
+            "images": [
+                {
+                    "id": 1,
+                    "link": "https://i.ibb.co/ctqDbv2/pngegg-5.png"
+                },
+                {
+                    "id": 2,
+                    "link": "https://i.ibb.co/pvgg4n3/pngegg-4.png"
+                },
+                {
+                    "id": 3,
+                    "link": "https://i.ibb.co/c35P2B5/pngegg-3.png"
+                },
+                {
+                    "id": 4,
+                    "link": "https://i.ibb.co/h8jsRX6/pngegg-2.png"
+                }
+            ]
         },
         {
             "id": "3",
@@ -34,7 +70,25 @@
             "in_stock": 1,
             "status": "Available",
             "background": "red",
-            "image": "/pdt3.png"
+            "image": "/pdt3.png",
+            "images": [
+                {
+                    "id": 1,
+                    "link": "https://i.ibb.co/ctqDbv2/pngegg-5.png"
+                },
+                {
+                    "id": 2,
+                    "link": "https://i.ibb.co/pvgg4n3/pngegg-4.png"
+                },
+                {
+                    "id": 3,
+                    "link": "https://i.ibb.co/c35P2B5/pngegg-3.png"
+                },
+                {
+                    "id": 4,
+                    "link": "https://i.ibb.co/h8jsRX6/pngegg-2.png"
+                }
+            ]
         },
         {
             "id": "4",
@@ -46,7 +100,25 @@
             "in_stock": 1,
             "status": "Available",
             "background": "red",
-            "image": "/pdt1.png"
+            "image": "/pdt1.png",
+            "images": [
+                {
+                    "id": 1,
+                    "link": "https://i.ibb.co/ctqDbv2/pngegg-5.png"
+                },
+                {
+                    "id": 2,
+                    "link": "https://i.ibb.co/pvgg4n3/pngegg-4.png"
+                },
+                {
+                    "id": 3,
+                    "link": "https://i.ibb.co/c35P2B5/pngegg-3.png"
+                },
+                {
+                    "id": 4,
+                    "link": "https://i.ibb.co/h8jsRX6/pngegg-2.png"
+                }
+            ]
         },
         {
             "id": "5",
@@ -58,7 +130,25 @@
             "in_stock": 0,
             "status": "Not Available",
             "background": "black",
-            "image": "/pdt2.png"
+            "image": "/pdt2.png",
+            "images": [
+                {
+                    "id": 1,
+                    "link": "https://i.ibb.co/ctqDbv2/pngegg-5.png"
+                },
+                {
+                    "id": 2,
+                    "link": "https://i.ibb.co/pvgg4n3/pngegg-4.png"
+                },
+                {
+                    "id": 3,
+                    "link": "https://i.ibb.co/c35P2B5/pngegg-3.png"
+                },
+                {
+                    "id": 4,
+                    "link": "https://i.ibb.co/h8jsRX6/pngegg-2.png"
+                }
+            ]
         },
         {
             "id": "6",
@@ -70,7 +160,25 @@
             "in_stock": 1,
             "status": "Available",
             "background": "red",
-            "image": "/pdt3.png"
+            "image": "/pdt3.png",
+            "images": [
+                {
+                    "id": 1,
+                    "link": "https://i.ibb.co/ctqDbv2/pngegg-5.png"
+                },
+                {
+                    "id": 2,
+                    "link": "https://i.ibb.co/pvgg4n3/pngegg-4.png"
+                },
+                {
+                    "id": 3,
+                    "link": "https://i.ibb.co/c35P2B5/pngegg-3.png"
+                },
+                {
+                    "id": 4,
+                    "link": "https://i.ibb.co/h8jsRX6/pngegg-2.png"
+                }
+            ]
         },
         {
             "id": "7",
@@ -82,7 +190,25 @@
             "in_stock": 1,
             "status": "Available",
             "background": "red",
-            "image": "/pdt1.png"
+            "image": "/pdt1.png",
+            "images": [
+                {
+                    "id": 1,
+                    "link": "https://i.ibb.co/ctqDbv2/pngegg-5.png"
+                },
+                {
+                    "id": 2,
+                    "link": "https://i.ibb.co/pvgg4n3/pngegg-4.png"
+                },
+                {
+                    "id": 3,
+                    "link": "https://i.ibb.co/c35P2B5/pngegg-3.png"
+                },
+                {
+                    "id": 4,
+                    "link": "https://i.ibb.co/h8jsRX6/pngegg-2.png"
+                }
+            ]
         },
         {
             "id": "8",
@@ -94,7 +220,25 @@
             "in_stock": 0,
             "status": "Not Available",
             "background": "black",
-            "image": "/pdt2.png"
+            "image": "/pdt2.png",
+            "images": [
+                {
+                    "id": 1,
+                    "link": "https://i.ibb.co/ctqDbv2/pngegg-5.png"
+                },
+                {
+                    "id": 2,
+                    "link": "https://i.ibb.co/pvgg4n3/pngegg-4.png"
+                },
+                {
+                    "id": 3,
+                    "link": "https://i.ibb.co/c35P2B5/pngegg-3.png"
+                },
+                {
+                    "id": 4,
+                    "link": "https://i.ibb.co/h8jsRX6/pngegg-2.png"
+                }
+            ]
         },
         {
             "id": "9",
@@ -106,7 +250,25 @@
             "in_stock": 1,
             "status": "Available",
             "background": "red",
-            "image": "/pdt3.png"
+            "image": "/pdt3.png",
+            "images": [
+                {
+                    "id": 1,
+                    "link": "https://i.ibb.co/ctqDbv2/pngegg-5.png"
+                },
+                {
+                    "id": 2,
+                    "link": "https://i.ibb.co/pvgg4n3/pngegg-4.png"
+                },
+                {
+                    "id": 3,
+                    "link": "https://i.ibb.co/c35P2B5/pngegg-3.png"
+                },
+                {
+                    "id": 4,
+                    "link": "https://i.ibb.co/h8jsRX6/pngegg-2.png"
+                }
+            ]
         },
         {
             "id": "10",
@@ -118,7 +280,25 @@
             "in_stock": 1,
             "status": "Available",
             "background": "red",
-            "image": "/pdt1.png"
+            "image": "/pdt1.png",
+            "images": [
+                {
+                    "id": 1,
+                    "link": "https://i.ibb.co/ctqDbv2/pngegg-5.png"
+                },
+                {
+                    "id": 2,
+                    "link": "https://i.ibb.co/pvgg4n3/pngegg-4.png"
+                },
+                {
+                    "id": 3,
+                    "link": "https://i.ibb.co/c35P2B5/pngegg-3.png"
+                },
+                {
+                    "id": 4,
+                    "link": "https://i.ibb.co/h8jsRX6/pngegg-2.png"
+                }
+            ]
         },
         {
             "id": "11",
@@ -130,7 +310,25 @@
             "in_stock": 0,
             "status": "Not Available",
             "background": "black",
-            "image": "/pdt2.png"
+            "image": "/pdt2.png",
+            "images": [
+                {
+                    "id": 1,
+                    "link": "https://i.ibb.co/ctqDbv2/pngegg-5.png"
+                },
+                {
+                    "id": 2,
+                    "link": "https://i.ibb.co/pvgg4n3/pngegg-4.png"
+                },
+                {
+                    "id": 3,
+                    "link": "https://i.ibb.co/c35P2B5/pngegg-3.png"
+                },
+                {
+                    "id": 4,
+                    "link": "https://i.ibb.co/h8jsRX6/pngegg-2.png"
+                }
+            ]
         },
         {
             "id": "12",
@@ -142,7 +340,25 @@
             "in_stock": 1,
             "status": "Available",
             "background": "red",
-            "image": "/pdt3.png"
+            "image": "/pdt3.png",
+            "images": [
+                {
+                    "id": 1,
+                    "link": "https://i.ibb.co/ctqDbv2/pngegg-5.png"
+                },
+                {
+                    "id": 2,
+                    "link": "https://i.ibb.co/pvgg4n3/pngegg-4.png"
+                },
+                {
+                    "id": 3,
+                    "link": "https://i.ibb.co/c35P2B5/pngegg-3.png"
+                },
+                {
+                    "id": 4,
+                    "link": "https://i.ibb.co/h8jsRX6/pngegg-2.png"
+                }
+            ]
         }
     ],
     "colors": [

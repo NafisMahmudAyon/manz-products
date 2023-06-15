@@ -2,9 +2,11 @@
 
 import axios from "axios";
 import { useEffect, useState } from "react";
+import ImageCarousel from "./ImageCarousel";
 
 const SingleProductMobile = ({ orders }) => {
   const [products, setProducts] = useState([]);
+  const [images, setImages] = useState([]);
 
   const id = orders - 1;
   const [colors, setColors] = useState([]);
@@ -15,6 +17,7 @@ const SingleProductMobile = ({ orders }) => {
   useEffect(() => {
     getColor();
     getProduct();
+    getImages();
   }, [id]);
 
   function getColor() {
@@ -37,6 +40,13 @@ const SingleProductMobile = ({ orders }) => {
     // axios.get(`https://manz.nafisbd.com/db.json`).then(function (response) {
     axios.get(`/db.json`).then(function (response) {
       setProducts(response.data.products[`${id}`]);
+    });
+  }
+  function getImages() {
+    // axios.get(`https://manz.nafisbd.com/db.json`).then(function (response) {
+    axios.get(`/db.json`).then(function (response) {
+      setImages(response.data.products[`${id}`].images);
+      console.log(response.data.products[`${id}`].images);
     });
   }
   const SVGa = (props) => (
@@ -74,8 +84,8 @@ const SingleProductMobile = ({ orders }) => {
   console.log(colored);
 
   return (
-    <div className="flex w-[100%] justify-center">
-      <div className=" px-24 sm:px-4 mt-24 flex  sm:flex-col max-w-[1024px] min-h-[300px] ">
+    <div className=" w-[100%]">
+      <div className=" px-24 sm:px-4 sm:flex-col max-w-[1024px] min-h-[300px] ">
         <div
           className="h-full w-1/2 sm:w-full relative overflow-hidden  drop-shadow-md drop-shadow-sky-700 rounded-l-lg sm:rounded-tr-lg sm:rounded-bl-none sm:rounded-tl-lg "
           style={{ backgroundColor: colored?.color }}
@@ -85,11 +95,12 @@ const SingleProductMobile = ({ orders }) => {
             {products.name}
           </h1>
           <div className="w-full flex justify-center items-center">
-            <img
+            {/* <img
               src={products.image}
               alt=""
               className="w-3/4  pt-16 sm:pt-10 sm:pb-4 mb-4 z-20"
-            />
+            /> */}
+            <ImageCarousel images={images} />
           </div>
         </div>
         <div

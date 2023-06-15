@@ -1,10 +1,13 @@
 /* eslint-disable react/prop-types */
 
+
 import axios from "axios";
 import { useEffect, useState } from "react";
+import ImageCarousel from "./ImageCarousel";
 
 const SingleProduct = ({ order }) => {
   const [products, setProducts] = useState([]);
+  const [images, setImages] = useState([]);
   const id = order - 1;
   const [colors, setColors] = useState([]);
   // const [value, setValue] = useState('2');
@@ -14,6 +17,7 @@ const SingleProduct = ({ order }) => {
   useEffect(() => {
     getColor();
     getProduct();
+    getImages();
   }, [id]);
 
   function getColor() {
@@ -36,6 +40,13 @@ const SingleProduct = ({ order }) => {
     // axios.get(`https://manz.nafisbd.com/db.json`).then(function (response) {
     axios.get(`/db.json`).then(function (response) {
       setProducts(response.data.products[`${id}`]);
+    });
+  }
+  function getImages() {
+    // axios.get(`https://manz.nafisbd.com/db.json`).then(function (response) {
+    axios.get(`/db.json`).then(function (response) {
+      setImages(response.data.products[`${id}`].images);
+      console.log(response.data.products[`${id}`].images);
     });
   }
   const SVGa = (props) => (
@@ -68,11 +79,14 @@ const SingleProduct = ({ order }) => {
     </svg>
   );
   const colored = colors[id % colors.length];
+  // const images = [products.images];
+  // console.log("product" + products);
+  // console.log("iamge" + images);
 
   return (
     <div className="flex w-[100%] justify-center ">
       {}
-      <div className=" px-24 sm:px-4 mt-24 flex  sm:flex-col max-w-[1024px] min-h-[300px]  ">
+      <div className=" px-24 sm:px-4 mt-12 flex  sm:flex-col max-w-[1024px] min-h-[300px]  ">
         <div
           className="h-full w-1/2 sm:w-full relative overflow-hidden  drop-shadow-md drop-shadow-sky-700 rounded-l-lg sm:rounded-tr-lg sm:rounded-bl-none sm:rounded-tl-lg "
           style={{ backgroundColor: colored?.color }}
@@ -82,11 +96,7 @@ const SingleProduct = ({ order }) => {
             {products.name}
           </h1>
           <div className="w-full flex justify-center items-center">
-            <img
-              src={products.image}
-              alt=""
-              className="w-3/4  pt-16 sm:pt-10 sm:pb-4 mb-4 z-20"
-            />
+          <ImageCarousel images={images} />
           </div>
         </div>
         <div
