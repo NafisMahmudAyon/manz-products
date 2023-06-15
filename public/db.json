@@ -11,6 +11,71 @@
             "status": "Available",
             "background": "red",
             "image": "/pdt1.png",
+            "sizes": [
+                {
+                    "id": "1",
+                    "sizeTitle": "S",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "300",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "sizeTitle": "M",
+                    "in_stock": 0,
+                    "status": "Not Available",
+                    "price": "400",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "sizeTitle": "L",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "500",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                }
+            ],
             "images": [
                 {
                     "id": 1,
@@ -41,6 +106,71 @@
             "status": "Not Available",
             "background": "black",
             "image": "/pdt2.png",
+            "sizes": [
+                {
+                    "id": "1",
+                    "sizeTitle": "S",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "300",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "sizeTitle": "M",
+                    "in_stock": 0,
+                    "status": "Not Available",
+                    "price": "400",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "sizeTitle": "L",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "500",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                }
+            ],
             "images": [
                 {
                     "id": 1,
@@ -71,6 +201,71 @@
             "status": "Available",
             "background": "red",
             "image": "/pdt3.png",
+            "sizes": [
+                {
+                    "id": "1",
+                    "sizeTitle": "S",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "300",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "sizeTitle": "M",
+                    "in_stock": 0,
+                    "status": "Not Available",
+                    "price": "400",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "sizeTitle": "L",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "500",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                }
+            ],
             "images": [
                 {
                     "id": 1,
@@ -101,6 +296,71 @@
             "status": "Available",
             "background": "red",
             "image": "/pdt1.png",
+            "sizes": [
+                {
+                    "id": "1",
+                    "sizeTitle": "S",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "300",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "sizeTitle": "M",
+                    "in_stock": 0,
+                    "status": "Not Available",
+                    "price": "400",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "sizeTitle": "L",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "500",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                }
+            ],
             "images": [
                 {
                     "id": 1,
@@ -131,6 +391,71 @@
             "status": "Not Available",
             "background": "black",
             "image": "/pdt2.png",
+            "sizes": [
+                {
+                    "id": "1",
+                    "sizeTitle": "S",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "300",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "sizeTitle": "M",
+                    "in_stock": 0,
+                    "status": "Not Available",
+                    "price": "400",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "sizeTitle": "L",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "500",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                }
+            ],
             "images": [
                 {
                     "id": 1,
@@ -161,6 +486,71 @@
             "status": "Available",
             "background": "red",
             "image": "/pdt3.png",
+            "sizes": [
+                {
+                    "id": "1",
+                    "sizeTitle": "S",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "300",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "sizeTitle": "M",
+                    "in_stock": 0,
+                    "status": "Not Available",
+                    "price": "400",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "sizeTitle": "L",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "500",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                }
+            ],
             "images": [
                 {
                     "id": 1,
@@ -191,6 +581,71 @@
             "status": "Available",
             "background": "red",
             "image": "/pdt1.png",
+            "sizes": [
+                {
+                    "id": "1",
+                    "sizeTitle": "S",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "300",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "sizeTitle": "M",
+                    "in_stock": 0,
+                    "status": "Not Available",
+                    "price": "400",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "sizeTitle": "L",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "500",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                }
+            ],
             "images": [
                 {
                     "id": 1,
@@ -221,6 +676,71 @@
             "status": "Not Available",
             "background": "black",
             "image": "/pdt2.png",
+            "sizes": [
+                {
+                    "id": "1",
+                    "sizeTitle": "S",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "300",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "sizeTitle": "M",
+                    "in_stock": 0,
+                    "status": "Not Available",
+                    "price": "400",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "sizeTitle": "L",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "500",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                }
+            ],
             "images": [
                 {
                     "id": 1,
@@ -251,6 +771,71 @@
             "status": "Available",
             "background": "red",
             "image": "/pdt3.png",
+            "sizes": [
+                {
+                    "id": "1",
+                    "sizeTitle": "S",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "300",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "sizeTitle": "M",
+                    "in_stock": 0,
+                    "status": "Not Available",
+                    "price": "400",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "sizeTitle": "L",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "500",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                }
+            ],
             "images": [
                 {
                     "id": 1,
@@ -281,6 +866,71 @@
             "status": "Available",
             "background": "red",
             "image": "/pdt1.png",
+            "sizes": [
+                {
+                    "id": "1",
+                    "sizeTitle": "S",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "300",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "sizeTitle": "M",
+                    "in_stock": 0,
+                    "status": "Not Available",
+                    "price": "400",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "sizeTitle": "L",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "500",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                }
+            ],
             "images": [
                 {
                     "id": 1,
@@ -311,6 +961,71 @@
             "status": "Not Available",
             "background": "black",
             "image": "/pdt2.png",
+            "sizes": [
+                {
+                    "id": "1",
+                    "sizeTitle": "S",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "300",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "sizeTitle": "M",
+                    "in_stock": 0,
+                    "status": "Not Available",
+                    "price": "400",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "sizeTitle": "L",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "500",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                }
+            ],
             "images": [
                 {
                     "id": 1,
@@ -341,6 +1056,71 @@
             "status": "Available",
             "background": "red",
             "image": "/pdt3.png",
+            "sizes": [
+                {
+                    "id": "1",
+                    "sizeTitle": "S",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "300",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "sizeTitle": "M",
+                    "in_stock": 0,
+                    "status": "Not Available",
+                    "price": "400",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "sizeTitle": "L",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "500",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6"
+                        }
+                    ]
+                }
+            ],
             "images": [
                 {
                     "id": 1,
