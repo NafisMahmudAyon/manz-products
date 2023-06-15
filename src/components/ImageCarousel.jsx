@@ -13,7 +13,7 @@ const ImageCarousel = ({ images }) => {
     showStatus: false,
     dynamicHeight: false,
     emulateTouch: false,
-    swipeable: true,
+    swipeable: false,
     transitionTime: 800,
     showIndicators: true,
   };
