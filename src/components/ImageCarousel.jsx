@@ -7,13 +7,15 @@ const ImageCarousel = ({ images }) => {
   const carouselOptions = {
     showArrows: true,
     showThumbs: false,
-    infiniteLoop: true,
-    autoPlay: true,
+    infiniteLoop: false,
+    autoPlay: false,
     interval: 1000,
     showStatus: false,
     dynamicHeight: false,
-    emulateTouch: true,
+    emulateTouch: false,
     swipeable: true,
+    transitionTime: 800,
+    showIndicators: true,
   };
   return (
     <Carousel {...carouselOptions}>
