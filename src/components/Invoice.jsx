@@ -43,24 +43,22 @@ const Invoice = () => {
   // };
 
   return (
-    <div className="w-[100%] min-h-[100vh] bg-stone-800 flex justify-center ">
+    <div className="w-[100%] min-h-[100vh] bg-[#0E2954] flex justify-center ">
       <div className="w-[80%] sm:w-[90%] md:w-[90%] my-14 sm:my-8 border sm:border-none py-10 sm:py-2 max-h-[80%] relative">
-        <div className="absolute top-6 left-6">
+        <div className="absolute top-6 left-6 sm:top-2 sm:left-2">
           {" "}
           <Link
             to="/invoice"
             className="flex gap-3 items-center px-5 py-2 relative text-lg font-semibold hover:text-white hover:bg-sky-600 transition-all duration-300  bg-sky-500 rounded-full "
           >
             {" "}
-            <img src="/back.png" alt="" className="w-8" /> Back
+            <img src="/back.png" alt="" className="w-8" /> <span className="sm:hidden">Back</span> 
           </Link>{" "}
         </div>
         <div className=" flex flex-col items-center">
-          <img
-            src="/lg.png"
-            alt=""
-            className="cover w-48 sm:w-32 md:w-36 mb-10"
-          />
+          <Link to="/">
+            <img src="/lg.png" alt="" className="cover mb-10 w-48 sm:w-32 md:w-36" />
+          </Link>
         </div>
         <div className=" bg-sky-500 w-[100%] h-8 flex justify-end sm:justify-center ">
           <h1 className="uppercase h-8 text-2xl  text-black bg-white font-bold text-right px-8  inline-block mr-8 sm:mr-0">
@@ -147,7 +145,7 @@ const Invoice = () => {
           </div>
           {/* </div> */}
         </div>
-        <div className="w-full text-white border-t bg-sky-500 mt-20 sm:mt-6 md:mt-10">
+        <footer className="w-full text-white border-t bg-sky-500 mt-20 sm:mt-6 md:mt-10">
           <div className="flex sm:flex-col py-4 pl-36 sm:pl-0 md:pl-10">
             <div className="px-2">
               <span>📞</span> 017X-XXXXXXX
@@ -168,7 +166,7 @@ const Invoice = () => {
               </a>
             </div>
           </div>
-        </div>
+        </footer>
       </div>
     </div>
   );

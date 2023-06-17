@@ -26,7 +26,7 @@ function OrderList() {
       });
   }
   return (
-    <div className="flex flex-col bg-stone-800 min-h-screen pt-8  items-center">
+    <div className="bg-[#0E2954] min-h-screen overflow-hidden">
       {/* <div className="mx-auto pt-10">
         <img
           src="/lg.png"
@@ -34,10 +34,12 @@ function OrderList() {
           className="cover w-48 sm:w-32 md:w-36  mb-10"
         />
       </div> */}
-      <Navbar />
-      <div className="w-[90%]  flex justify-center py-3 ">
-        <div className="overflow-x-auto">
-          <table className="w-full bg-black table-auto block text-sm mx-auto text-left text-gray-500 ">
+      <div className="z-[1000] sm:block md:block sm:static sticky top-0 py-4  bg-[#0E2954]">
+        <Navbar />
+      </div>
+      <div className=" w-[100%]  flex items-center justify-center py-3 ">
+        <div className="overflow-x-auto ">
+          <table className="w-full  table-auto block text-sm mx-auto text-left text-gray-500 ">
             <thead className="text-xs  uppercase  bg-gray-900 text-gray-400">
               <tr>
                 <th scope="col" className="px-6 py-3">
@@ -106,90 +108,6 @@ function OrderList() {
                     );
                   })
                 : null}
-              {/* <tr className="bg-white border-b h-5">
-                  <th className="px-6 py-4 font-medium whitespace-nowrap ">
-                    #TS-1000
-                  </th>
-                  <td colSpan="2" className="px-6 py-4">
-                    Customer Name
-                  </td>
-                  <td className="px-6 py-4">01/01/2023</td>
-                  <td className="px-6 py-4">05/01/2023</td>
-                  <td className="px-6 py-4">
-                    <span className="p-1 rounded-md uppercase text-red-500 font-bold bg-red-300">
-                      Processing
-                    </span>
-                  </td>
-                  <td className="px-6 py-4">
-                    <span className="p-1 rounded-md uppercase text-emerald-500 font-bold bg-emerald-300">
-                      Paid
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 text-right">
-                    <a
-                      href="#"
-                      className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                    >
-                      Details
-                    </a>
-                  </td>
-                </tr>
-                <tr className="bg-white border-b h-5">
-                  <th className="px-6 py-4 font-medium whitespace-nowrap ">
-                    #TS-1000
-                  </th>
-                  <td colSpan="2" className="px-6 py-4">
-                    Customer Name
-                  </td>
-                  <td className="px-6 py-4">01/01/2023</td>
-                  <td className="px-6 py-4">05/01/2023</td>
-                  <td className="px-6 py-4">
-                    <span className="p-1 rounded-md uppercase text-red-500 font-bold bg-red-300">
-                      Processing
-                    </span>
-                  </td>
-                  <td className="px-6 py-4">
-                    <span className="p-1 rounded-md uppercase text-emerald-500 font-bold bg-emerald-300">
-                      Paid
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 text-right">
-                    <a
-                      href="#"
-                      className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                    >
-                      Details
-                    </a>
-                  </td>
-                </tr>
-                <tr className="bg-white border-b h-5">
-                  <th className="px-6 py-4 font-medium whitespace-nowrap ">
-                    #TS-1000
-                  </th>
-                  <td colSpan="2" className="px-6 py-4">
-                    Customer Name
-                  </td>
-                  <td className="px-6 py-4">01/01/2023</td>
-                  <td className="px-6 py-4">05/01/2023</td>
-                  <td className="px-6 py-4">
-                    <span className="p-1 rounded-md uppercase text-red-500 font-bold bg-red-300">
-                      Processing
-                    </span>
-                  </td>
-                  <td className="px-6 py-4">
-                    <span className="p-1 rounded-md uppercase text-emerald-500 font-bold bg-emerald-300">
-                      Paid
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 text-right">
-                    <a
-                      href="#"
-                      className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                    >
-                      Details
-                    </a>
-                  </td>
-                </tr> */}
             </tbody>
           </table>
         </div>
