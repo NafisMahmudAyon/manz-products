@@ -21,7 +21,11 @@ export default {
       'sm': {'max': '639px'},
       // => @media (max-width: 639px) { ... }
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        'md-custom': 'inset 6px 6px 10px rgba(0, 0, 0, 0.3)',
+      },
+    },
   },
   plugins: [],
 }

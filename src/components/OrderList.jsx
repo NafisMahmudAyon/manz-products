@@ -20,10 +20,10 @@ function OrderList() {
     // .get("https://manz-orders-server.onrender.com/dashboard")
     // axios.get(`https://manz.nafisbd.com/db.json`).then(function (response) {
     axios.get(`/db.json`).then(function (response) {
-        console.log("ahaha");
-        console.log(response.data.dashboard);
-        setDetails(response.data.dashboard);
-      });
+      console.log("ahaha");
+      console.log(response.data.dashboard);
+      setDetails(response.data.dashboard);
+    });
   }
   return (
     <div className="bg-[#0E2954] min-h-screen overflow-hidden">
@@ -37,9 +37,9 @@ function OrderList() {
       <div className="z-[1000] sm:block md:block sm:static sticky top-0 py-4  bg-[#0E2954]">
         <Navbar />
       </div>
-      <div className=" w-[100%]  flex items-center justify-center py-3 ">
+      <div className=" w-[100%]  flex flex-col items-center justify-center py-3 ">
         <div className="overflow-x-auto ">
-          <table className="w-full  table-auto block text-sm mx-auto text-left text-gray-500 ">
+          <table className="w-full sm:hidden md:hidden  table-auto block text-sm mx-auto text-left text-gray-500 ">
             <thead className="text-xs  uppercase  bg-gray-900 text-gray-400">
               <tr>
                 <th scope="col" className="px-6 py-3">
@@ -110,6 +110,56 @@ function OrderList() {
                 : null}
             </tbody>
           </table>
+        </div>
+        <div className=" flex w-[100%] justify-center flex-col my-4 sm:block md:block lg:hidden xl:hidden">
+          {Array.isArray(details)
+            ? details.map((detail) => {
+                return (
+                  <div
+                    key={detail.id}
+                    className="text-black w-[80%] mx-auto py-4 px-4 bg-white mb-6 rounded-lg shadow-md-custom"
+                  >
+                    <div className="flex justify-between items-center">
+                      <h3 className="text-3xl">{detail.orderNo}</h3>
+                      <div className="flex flex-col">
+                        <div className="flex items-center py-1 gap-4">
+                          {detail.statusCode === 1 ? <><span className="w-4 h-4 rounded-full bg-emerald-500"></span><p className="text-sm text-gray-400">{detail.status}</p></> : null}
+                          {detail.statusCode === 2 ? <><span className="w-4 h-4 rounded-full bg-emerald-500"></span><p className="text-sm text-gray-400">{detail.status}</p></> : null}
+                          {detail.statusCode === 3 ? <><span className="w-4 h-4 rounded-full bg-red-400"></span><p className="text-sm text-gray-400">{detail.status}</p></> : null}
+                          {/* <span className="w-4 h-4 rounded-full bg-red-400"></span><p className="text-sm text-gray-400">{detail.status}</p> */}
+                        </div>
+                        <div className="flex items-center py-1 gap-4">
+                        {detail.paymentCode === 1 ? <><span className="w-4 h-4 rounded-full bg-orange-500"></span><p className="text-sm text-gray-400">{detail.payment}</p></> : null}
+                        {detail.paymentCode === 2 ? <><span className="w-4 h-4 rounded-full bg-emerald-500"></span><p className="text-sm text-gray-400">{detail.payment}</p></> : null}
+                          {/* <span className="w-4 h-4 rounded-full bg-red-400"></span><p className="text-sm text-gray-400">{detail.payment}</p> */}
+                        </div>
+                      </div>
+                    </div>
+
+                    <h3 className="text-2xl">{detail.customerName}</h3>
+                    <div className="flex justify-between py-5">
+                      <div className="relative">
+                        <p className="text-lg">{detail.orderDate}</p>
+                        <span className="absolute block top-5 text-sm text-gray-400 left-1/2 -translate-x-1/2 w-full">
+                          Order Date
+                        </span>
+                      </div>
+                      <div className="relative">
+                        <p className="text-lg block">{detail.expectedDate}</p>
+                        <span className="absolute block top-5 text-sm text-gray-400 left-1/2 -translate-x-1/2 w-full">
+                          Expected Date
+                        </span>
+                      </div>
+                    </div>
+                    <Link to={`order/${detail.id}/`}>
+                      <button className="w-full text-center py-2 border-2 border-black rounded-lg">
+                        Details
+                      </button>
+                    </Link>
+                  </div>
+                );
+              })
+            : null}
         </div>
       </div>
     </div>
