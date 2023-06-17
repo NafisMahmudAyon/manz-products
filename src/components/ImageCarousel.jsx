@@ -21,8 +21,8 @@ const ImageCarousel = ({ images }) => {
     <Carousel {...carouselOptions}>
       { Array.isArray(images) ?
         images.map((image) => (
-        <div key={image.id} className="pt-10 flex items-center justify-center w-full h-full">
-          <img src={image.link} alt={` ${image.id}`}  className=" object-cover"/>
+        <div key={image.id} className="">
+          <img src={image.link} alt={` ${image.id}`}  className="w-full h-[400px] object-contain my-[10px]"/>
         </div>
       )) : null}
     </Carousel>

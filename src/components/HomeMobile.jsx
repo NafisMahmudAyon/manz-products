@@ -9,14 +9,14 @@ import SingleProductMobile from "./SingleProductMobile";
 function HomeMobile() {
   const [orders, setOrders] = useState("1");
   const [products, setProducts] = useState([]);
-
+  const id= orders-1;
   const [colors, setColors] = useState([]);
   const [popupVisible, setPopupVisible] = useState(false);
   useEffect(() => {
     getColor();
     getProduct();
   }, []);
-
+console.log(colors[orders]?.color)
   function getColor() {
     axios
       // .get("https://manz-orders-server.onrender.com/color")
@@ -78,33 +78,33 @@ function HomeMobile() {
 
   return (
     <div className="bg-[#0E2954] min-h-screen">
-      <div className="z-[1000] sm:block md:block lg:hidden xl:hidden sm:static sticky top-0 py-4  bg-[#0E2954]">
+      <div className="z-[1000] sm:block md:block sm:static sticky top-0 py-4  bg-[#0E2954]">
         <Navbar />
       </div>
       {/* <SingleProductMobile orders={orders} /> */}
       {popupVisible && (
-        <div className="fixed inset-0 z-[1001] flex min-h-[100dvh] items-center justify-center overflow-auto">
-          <div className="bg-white p-8 rounded-lg">
-            <div className="flex justify-end">
-              <button
-                className="text-blue-400 font-semibold text-3xl absolute top-2 right-4 hover:text-blue-800"
-                onClick={handlePopupClose}
-              >
-                &times;
-              </button>
-            </div>
+        <div className="absolute inset-0 z-[1001] overflow-auto overflow-x-hidden">
+          {/* <div className="relative "> */}
+            <button
+              className="text-white  z-[1115]  font-semibold text-5xl rounded-full absolute top-2 right-4 "
+              onClick={handlePopupClose}
+              style={{ color: colors[id]?.color }}
+            >
+              &times;
+            </button>
+
             {/* <div className="mt-4"> */}
-              {/* {orders} */}
-              <SingleProductMobile orders={orders} />
+            {/* {orders} */}
+            <SingleProductMobile orders={orders} />
             {/* </div> */}
           </div>
-        </div>
+        // </div>
       )}
       <div>
         <div className="p-18 flex flex-wrap items-center justify-center overflow-auto overflow-x-hidden ">
           {Array.isArray(products)
             ? products.map((product, index) => {
-              // const length = colors?.length();
+                // const length = colors?.length();
                 const color = colors?.[index % colors.length];
                 const stock = product.in_stock;
                 // const productId = product.id;
@@ -114,7 +114,6 @@ function HomeMobile() {
                     style={{ backgroundColor: color?.color }}
                     className="flex-shrink-0 m-6 relative overflow-hidden  rounded-lg max-w-xs shadow-lg"
                   >
-                    
                     {/* <button onClick={() => setOrder(product.id)}> */}
                     <button onClick={handleElementClick.bind(null, product.id)}>
                       <div className="absolute top-2 left-2 z-50 ">

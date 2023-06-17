@@ -21,15 +21,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -42,15 +45,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -63,15 +69,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 }
@@ -116,15 +125,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -137,15 +149,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -158,15 +173,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 }
@@ -211,15 +229,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -232,15 +253,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -253,15 +277,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 }
@@ -306,15 +333,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -327,15 +357,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -348,15 +381,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 }
@@ -401,15 +437,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -422,15 +461,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -443,15 +485,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 }
@@ -496,15 +541,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -517,15 +565,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -538,15 +589,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 }
@@ -591,15 +645,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -612,15 +669,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -633,15 +693,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 }
@@ -686,15 +749,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -707,15 +773,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -728,15 +797,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 }
@@ -781,15 +853,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -802,15 +877,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -823,15 +901,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 }
@@ -876,15 +957,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -897,15 +981,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -918,15 +1005,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 }
@@ -971,15 +1061,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -992,15 +1085,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -1013,15 +1109,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 }
@@ -1066,15 +1165,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -1087,15 +1189,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 },
@@ -1108,15 +1213,18 @@
                     "colors": [
                         {
                             "id": 1,
-                            "color": "#06b6d4"
+                            "color": "#06b6d4",
+                            "status": "Available"
                         },
                         {
                             "id": 2,
-                            "color": "#10b981"
+                            "color": "#10b981",
+                            "status": "Available"
                         },
                         {
                             "id": 3,
-                            "color": "#3b82f6"
+                            "color": "#3b82f6",
+                            "status": "Available"
                         }
                     ]
                 }
@@ -1179,13 +1287,28 @@
         },
         {
             "id": 8,
-            "color": "#6366f1",
-            "backColor": "#c7d2fe"
+            "color": "#a855f7",
+            "backColor": "#e9d5ff"
         },
         {
             "id": 9,
             "color": "#8b5cf6",
             "backColor": "#ddd6fe"
+        },
+        {
+            "id": 10,
+            "color": "#f97316",
+            "backColor": "#fed7aa"
+        },
+        {
+            "id": 11,
+            "color": "#eab308",
+            "backColor": "#fef08a"
+        },
+        {
+            "id": 12,
+            "color": "#10b981",
+            "backColor": "#a7f3d0"
         }
     ],
     "dashboard": [

@@ -115,9 +115,9 @@ const SingleProduct = ({ order }) => {
   console.log("sizedetails" + sizesDetails.status);
 
   return (
-    <div className="flex w-[100%] justify-center ">
+    <div className="flex w-[100%] justify-start relative overflow-auto">
       {}
-      <div className=" px-24 sm:px-4 mt-4 flex  sm:flex-col max-w-[1024px] min-h-[300px]  ">
+      <div className="sm:px-4 mt-4 flex  sm:flex-col max-w-[1024px]  overflow-auto">
         <div
           className="h-full w-1/2 sm:w-full relative overflow-hidden  drop-shadow-md drop-shadow-sky-700 rounded-l-lg sm:rounded-tr-lg sm:rounded-bl-none sm:rounded-tl-lg "
           style={{ backgroundColor: colored?.color }}
