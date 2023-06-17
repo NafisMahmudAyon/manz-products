@@ -5,7 +5,8 @@ import axios from "axios";
 import Navbar from "./Navbar";
 import SingleProductMobile from "./SingleProductMobile";
 
-import MessengerCustomerChat from "react-messenger-customer-chat";
+// import MessengerCustomerChat from "react-messenger-customer-chat";
+// import MessengerChat from "./MessengerChat";
 // import SingleProductMobile from "./SingleProductMobile";
 
 function HomeMobile() {
@@ -170,10 +171,11 @@ function HomeMobile() {
             : null}
         </div>
       </div>
-      <MessengerCustomerChat
+      {/* <MessengerCustomerChat
         pageId="118142634620388"
         appId="1325514468346747"
-      />
+      /> */}
+      {/* <MessengerChat /> */}
     </div>
   );
 }

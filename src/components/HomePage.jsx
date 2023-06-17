@@ -1,6 +1,7 @@
 // import Home from "./Home"
 import HomeMobile from "./HomeMobile";
-import MessengerCustomerChat from "react-messenger-customer-chat";
+// import MessengerCustomerChat from "react-messenger-customer-chat";
+// import MessengerChat from "./MessengerChat";
 
 const HomePage = () => {
   return (
@@ -10,10 +11,7 @@ const HomePage = () => {
       <div className="sm:block md:block ">
         <HomeMobile />{" "}
       </div>
-      <MessengerCustomerChat
-        pageId="118142634620388"
-        appId="1325514468346747"
-      />
+      
     </div>
   );
 };

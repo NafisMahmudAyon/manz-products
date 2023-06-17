@@ -39,7 +39,7 @@ function OrderList() {
       </div>
       <div className=" w-[100%]  flex flex-col items-center justify-center py-3 ">
         <div className="overflow-x-auto ">
-          <table className="w-full sm:hidden md:hidden  table-auto block text-sm mx-auto text-left text-gray-500 ">
+          <table className="w-full sm:hidden md:hidden lg:block xl:block 2xl:block table-auto block text-sm mx-auto text-left text-gray-500 ">
             <thead className="text-xs  uppercase  bg-gray-900 text-gray-400">
               <tr>
                 <th scope="col" className="px-6 py-3">
@@ -111,7 +111,7 @@ function OrderList() {
             </tbody>
           </table>
         </div>
-        <div className=" flex w-[100%] justify-center flex-col my-4 sm:block md:block lg:hidden xl:hidden">
+        <div className=" flex w-[100%] justify-center flex-col my-4 sm:block md:block lg:hidden xl:hidden 2xl:hidden">
           {Array.isArray(details)
             ? details.map((detail) => {
                 return (
@@ -123,14 +123,49 @@ function OrderList() {
                       <h3 className="text-3xl">{detail.orderNo}</h3>
                       <div className="flex flex-col">
                         <div className="flex items-center py-1 gap-4">
-                          {detail.statusCode === 1 ? <><span className="w-4 h-4 rounded-full bg-emerald-500"></span><p className="text-sm text-gray-400">{detail.status}</p></> : null}
-                          {detail.statusCode === 2 ? <><span className="w-4 h-4 rounded-full bg-emerald-500"></span><p className="text-sm text-gray-400">{detail.status}</p></> : null}
-                          {detail.statusCode === 3 ? <><span className="w-4 h-4 rounded-full bg-red-400"></span><p className="text-sm text-gray-400">{detail.status}</p></> : null}
+                          {detail.statusCode === 1 ? (
+                            <>
+                              <span className="w-4 h-4 rounded-full bg-emerald-500"></span>
+                              <p className="text-sm text-gray-400">
+                                {detail.status}
+                              </p>
+                            </>
+                          ) : null}
+                          {detail.statusCode === 2 ? (
+                            <>
+                              <span className="w-4 h-4 rounded-full bg-emerald-500"></span>
+                              <p className="text-sm text-gray-400">
+                                {detail.status}
+                              </p>
+                            </>
+                          ) : null}
+                          {detail.statusCode === 3 ? (
+                            <>
+                              <span className="w-4 h-4 rounded-full bg-red-400"></span>
+                              <p className="text-sm text-gray-400">
+                                {detail.status}
+                              </p>
+                            </>
+                          ) : null}
                           {/* <span className="w-4 h-4 rounded-full bg-red-400"></span><p className="text-sm text-gray-400">{detail.status}</p> */}
                         </div>
                         <div className="flex items-center py-1 gap-4">
-                        {detail.paymentCode === 1 ? <><span className="w-4 h-4 rounded-full bg-orange-500"></span><p className="text-sm text-gray-400">{detail.payment}</p></> : null}
-                        {detail.paymentCode === 2 ? <><span className="w-4 h-4 rounded-full bg-emerald-500"></span><p className="text-sm text-gray-400">{detail.payment}</p></> : null}
+                          {detail.paymentCode === 1 ? (
+                            <>
+                              <span className="w-4 h-4 rounded-full bg-orange-500"></span>
+                              <p className="text-sm text-gray-400">
+                                {detail.payment}
+                              </p>
+                            </>
+                          ) : null}
+                          {detail.paymentCode === 2 ? (
+                            <>
+                              <span className="w-4 h-4 rounded-full bg-emerald-500"></span>
+                              <p className="text-sm text-gray-400">
+                                {detail.payment}
+                              </p>
+                            </>
+                          ) : null}
                           {/* <span className="w-4 h-4 rounded-full bg-red-400"></span><p className="text-sm text-gray-400">{detail.payment}</p> */}
                         </div>
                       </div>
