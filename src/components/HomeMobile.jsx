@@ -9,7 +9,7 @@ import SingleProductMobile from "./SingleProductMobile";
 function HomeMobile() {
   const [orders, setOrders] = useState("1");
   const [products, setProducts] = useState([]);
-  const id= orders-1;
+  // const id= orders-1;
   const [colors, setColors] = useState([]);
   const [popupVisible, setPopupVisible] = useState(false);
   useEffect(() => {
@@ -88,7 +88,7 @@ console.log(colors[orders]?.color)
             <button
               className="text-white  z-[1115]  font-semibold text-5xl rounded-full absolute top-2 right-4 "
               onClick={handlePopupClose}
-              style={{ color: colors[id]?.color }}
+              
             >
               &times;
             </button>

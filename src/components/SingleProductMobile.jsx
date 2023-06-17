@@ -124,7 +124,7 @@ const SingleProductMobile = ({ orders }) => {
           <div className="w-full  overflow-hidden absolute top-[100px]">
             <SVGa className="" />
           </div>
-          <h1 className="text-7xl sm:text-3xl text-slate-800 absolute top-5 left-5 font-bold opacity-60">
+          <h1 className="text-7xl sm:text-5xl text-slate-800 absolute top-5 left-5 font-bold opacity-60">
             {products.name}
           </h1>
           <div className="!w-full !h-[420px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
