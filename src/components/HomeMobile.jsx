@@ -109,6 +109,7 @@ function HomeMobile() {
                 // const length = colors?.length();
                 const color = colors?.[index % colors.length];
                 const stock = product.in_stock;
+                const newed = product.new;
                 // const productId = product.id;
                 return (
                   <div
@@ -141,6 +142,19 @@ function HomeMobile() {
                           </div>
                         )}
                       </div>
+                      {newed === 1 ? (
+                        <div className="absolute top-2 right-2">
+                          <div className="inline-block  relative">
+                            <p className="text-sm inline-block pr-[5px] text-black font-semibold">
+                              new
+                            </p>{" "}
+                            <span className="absolute top-0 right-0 text-[10px] animate-ping">
+                              🌟
+                            </span>
+                          </div>
+                        </div>
+                      ) : null}
+
                       <SVGa className="absolute top-[100px]" />
                       <div className="relative pt-10 px-10 flex items-center justify-center z-10">
                         <div className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3 threed"></div>

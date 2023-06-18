@@ -20,11 +20,15 @@ function OrderList() {
     // .get("https://manz-orders-server.onrender.com/dashboard")
     // axios.get(`https://manz.nafisbd.com/db.json`).then(function (response) {
     axios.get(`/db.json`).then(function (response) {
-      console.log("ahaha");
-      console.log(response.data.dashboard);
-      setDetails(response.data.dashboard);
+      console.log("hello");
+      const datas = response.data.dashboard;
+      const sortDetails = datas.sort((a,b) => b.id - a.id);
+      console.log(sortDetails);
+      setDetails(sortDetails);
     });
   }
+  console.log(details);
+  
   return (
     <div className="bg-[#0E2954] min-h-screen overflow-hidden">
       {/* <div className="mx-auto pt-10">
@@ -68,9 +72,9 @@ function OrderList() {
 
             <tbody className="">
               {Array.isArray(details)
-                ? details.map((detail) => {
+                ? details.map((detail, index) => {
                     return (
-                      <tr className="bg-white border-b h-5" key={detail.id}>
+                      <tr className="bg-white border-b h-5" key={index}>
                         <td className="">
                           <Link
                             to={`order/${detail.id}/`}

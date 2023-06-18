@@ -10,6 +10,7 @@
             "in_stock": 1,
             "status": "Available",
             "background": "red",
+            "new": 1,
             "image": "/pdt1.png",
             "sizes": [
                 {
@@ -114,6 +115,7 @@
             "in_stock": 0,
             "status": "Not Available",
             "background": "black",
+            "new": 0,
             "image": "/pdt2.png",
             "sizes": [
                 {
@@ -218,6 +220,7 @@
             "in_stock": 1,
             "status": "Available",
             "background": "red",
+            "new": 1,
             "image": "/pdt3.png",
             "sizes": [
                 {
@@ -322,6 +325,7 @@
             "in_stock": 1,
             "status": "Available",
             "background": "red",
+            "new": 1,
             "image": "/pdt1.png",
             "sizes": [
                 {
@@ -426,6 +430,7 @@
             "in_stock": 0,
             "status": "Not Available",
             "background": "black",
+            "new": 0,
             "image": "/pdt2.png",
             "sizes": [
                 {
@@ -530,6 +535,7 @@
             "in_stock": 1,
             "status": "Available",
             "background": "red",
+            "new": 1,
             "image": "/pdt3.png",
             "sizes": [
                 {
@@ -634,6 +640,7 @@
             "in_stock": 1,
             "status": "Available",
             "background": "red",
+            "new": 1,
             "image": "/pdt1.png",
             "sizes": [
                 {
@@ -738,6 +745,7 @@
             "in_stock": 0,
             "status": "Not Available",
             "background": "black",
+            "new": 0,
             "image": "/pdt2.png",
             "sizes": [
                 {
@@ -842,6 +850,7 @@
             "in_stock": 1,
             "status": "Available",
             "background": "red",
+            "new": 1,
             "image": "/pdt3.png",
             "sizes": [
                 {
@@ -946,6 +955,7 @@
             "in_stock": 1,
             "status": "Available",
             "background": "red",
+            "new": 1,
             "image": "/pdt1.png",
             "sizes": [
                 {
@@ -1050,6 +1060,7 @@
             "in_stock": 0,
             "status": "Not Available",
             "background": "black",
+            "new": 0,
             "image": "/pdt2.png",
             "sizes": [
                 {
@@ -1154,6 +1165,7 @@
             "in_stock": 1,
             "status": "Available",
             "background": "red",
+            "new": 1,
             "image": "/pdt3.png",
             "sizes": [
                 {
