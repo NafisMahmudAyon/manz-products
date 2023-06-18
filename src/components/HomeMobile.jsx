@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "./Navbar";
 import SingleProductMobile from "./SingleProductMobile";
+
+// import MessengerCustomerChat from "react-messenger-customer-chat";
+// import MessengerChat from "./MessengerChat";
 // import SingleProductMobile from "./SingleProductMobile";
 
 function HomeMobile() {
@@ -16,7 +19,7 @@ function HomeMobile() {
     getColor();
     getProduct();
   }, []);
-console.log(colors[orders]?.color)
+  console.log(colors[orders]?.color);
   function getColor() {
     axios
       // .get("https://manz-orders-server.onrender.com/color")
@@ -85,19 +88,18 @@ console.log(colors[orders]?.color)
       {popupVisible && (
         <div className="fixed inset-0 z-[1001] overflow-auto overflow-x-hidden">
           {/* <div className="relative "> */}
-            <button
-              className="text-white  z-[1115]  font-semibold text-5xl rounded-full absolute top-2 right-4 "
-              onClick={handlePopupClose}
-              
-            >
-              &times;
-            </button>
+          <button
+            className="text-white  z-[1115]  font-semibold text-5xl rounded-full absolute top-2 right-4 "
+            onClick={handlePopupClose}
+          >
+            &times;
+          </button>
 
-            {/* <div className="mt-4"> */}
-            {/* {orders} */}
-            <SingleProductMobile orders={orders} />
-            {/* </div> */}
-          </div>
+          {/* <div className="mt-4"> */}
+          {/* {orders} */}
+          <SingleProductMobile orders={orders} />
+          {/* </div> */}
+        </div>
         // </div>
       )}
       <div>
@@ -169,6 +171,11 @@ console.log(colors[orders]?.color)
             : null}
         </div>
       </div>
+      {/* <MessengerCustomerChat
+        pageId="118142634620388"
+        appId="1325514468346747"
+      /> */}
+      {/* <MessengerChat /> */}
     </div>
   );
 }

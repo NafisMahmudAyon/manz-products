@@ -6,6 +6,7 @@ import OrderList from "./components/OrderList";
 // import HomeMobile from "./components/HomeMobile";
 import HomePage from "./components/HomePage";
 // import Invoice from "./components/Invoice";
+import MessengerCustomerChat from "react-messenger-customer-chat";
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
         <Route path="invoice/" element={<OrderList />} />
         <Route path="invoice/order/:id/" element={<Invoice />} />
       </Routes>
+      <MessengerCustomerChat
+        pageId="118142634620388"
+        appId="1325514468346747"
+      />
     </BrowserRouter>
   );
 }
