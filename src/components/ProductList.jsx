@@ -1,24 +1,65 @@
 /* eslint-disable react/prop-types */
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const ProductList = (props) => {
+  const [details, setDetails] = useState([]);
+  const [detail, setDetail] = useState({});
   const [products, setProducts] = useState([]);
-  const {id}  = props;
+  const { id } = useParams();
 
   useEffect(() => {
-    getProducts();
+    getOrder();
   }, []);
 
-  function getProducts() {
-    // axios.get(`https://manz-orders-server.onrender.com/products-${id}`).then(function (response) {
-    // axios.get(`https://manz.nafisbd.com/db.json`).then(function (response) {
+  useEffect(() => {
+    getObjectById(id);
+  }, [id]);
+
+  function getOrder() {
     axios.get(`/db.json`).then(function (response) {
-      setProducts(response.data.dashboard[`${id}`].products);
-      console.log("hell");
-      console.log(response.data.dashboard[`${id}`].products);
+      setDetails(response.data.dashboard);
     });
   }
+
+  const findObjectById = (id) => {
+    return details.find((item) => item.id === id);
+  };
+
+  const getObjectById = (id) => {
+    const object = findObjectById(id);
+    setDetail(object);
+    if (object) {
+      setProducts(object.products);
+    }
+    console.log('Object:', object);
+  };
+
+  useEffect(() => {
+    getObjectById(id);
+  }, [id, details]);
+
+
+
+
+
+
+
+
+
+
+
+
+  // function getProducts() {
+  //   // axios.get(`https://manz-orders-server.onrender.com/products-${id}`).then(function (response) {
+  //   // axios.get(`https://manz.nafisbd.com/db.json`).then(function (response) {
+  //   axios.get(`/db.json`).then(function (response) {
+  //     setProducts(response.data.dashboard[`${id}`].products);
+  //     console.log("hell");
+  //     console.log(response.data.dashboard[`${id}`].products);
+  //   });
+  // }
 
   return (
     <div className="overflow-x-auto">
@@ -47,16 +88,16 @@ const ProductList = (props) => {
         </thead>
         <tbody className="">
           {Array.isArray(products)
-            ? products.map((product) => {
+            ? products.map((prod) => {
                 return (
-                  <tr key={product.id} className="h-14 border-b-2 border-gray-300 ">
-                    <td className="px-6 py-3">{product.id}</td>
+                  <tr key={prod.id} className="h-14 border-b-2 border-gray-300 ">
+                    <td className="px-6 py-3">{prod.id}</td>
                     <td className="px-6 py-3">
-                      <img src={product.image} alt="" className="w-10" />
+                      <img src={prod.image} alt="" className="w-10" />
                     </td>
-                    <td className="px-6 py-3">{product.name}</td>
-                    <td className="px-6 py-3">{product.price}</td>
-                    <td className="px-6 py-3">{product.quantity}</td>
+                    <td className="px-6 py-3">{prod.name}</td>
+                    <td className="px-6 py-3">{prod.price}</td>
+                    <td className="px-6 py-3">{prod.quantity}</td>
                     <td className="px-6 py-3">Total</td>
                   </tr>
                 );

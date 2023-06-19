@@ -2,11 +2,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import OrderList from "./components/OrderList";
 // import Home from "./components/Home";
 import Invoice from "./components/Invoice";
-import OrderList from "./components/OrderList";
+// import OrderList from "./components/OrderList";
 // import HomeMobile from "./components/HomeMobile";
 import HomePage from "./components/HomePage";
 // import Invoice from "./components/Invoice";
 import MessengerCustomerChat from "react-messenger-customer-chat";
+import Search from "./components/Search";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
 
       <Routes>
         <Route index element={<HomePage />} />
-        <Route path="invoice/" element={<OrderList />} />
+        <Route path="invoice/" element={<Search />} />
         <Route path="invoice/order/:id/" element={<Invoice />} />
       </Routes>
       <MessengerCustomerChat
