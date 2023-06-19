@@ -207,9 +207,8 @@ const NotFound = () => {
             <h1 className="">404</h1>
             <h2>UH OH! You&apos;re lost.</h2>
             <p>
-              The page you are looking for does not exist. How you got here is a
-              mystery. But you can click the button below to go back to the
-              homepage.
+              Your Invoice No is not correct. Please Go to our Home Page or Go
+              to search page to to search with a valid Invoice no.
             </p>
             <div className="flex gap-6 justify-center mt-4">
               <Link to="/">

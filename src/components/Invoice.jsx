@@ -56,10 +56,14 @@ const Invoice = () => {
   // }
 
   // Render the specific page when item is not found
-  if (!detail?.id) {
+  if (!detail || !detail.id) {
     return <div><NotFound /> </div>; // Display a message or custom component for the specific page
   }
-  else {
+
+  // if (!detail.id && Object.keys(detail).length !== 0) {
+  //   return <div>Item Not Found</div>; // Display a message or custom component for the specific page
+  // }
+  
 
     return (
       <div className="w-[100%] min-h-[100vh] bg-[#0E2954] flex justify-center ">
@@ -196,7 +200,7 @@ const Invoice = () => {
       </div>
             
     );
-  }
+  
 
 };
 
