@@ -9,7 +9,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="my-auto text-white px-6 py-2 bg-[#1F6E8C] rounded-full text-lg font-semibold">
-        <Link to="/invoice">Invoice List</Link>
+        <Link to="/invoice">Search Invoice</Link>
       </div>
     </div>
   );
