@@ -205,7 +205,7 @@ const NotFound = () => {
           </div>
           <div className="w-1/2 sm:w-full text-slate-900 sm:justify-center ">
             <h1 className="">404</h1>
-            <h2>UH OH! You're lost.</h2>
+            <h2>UH OH! You&apos;re lost.</h2>
             <p>
               The page you are looking for does not exist. How you got here is a
               mystery. But you can click the button below to go back to the

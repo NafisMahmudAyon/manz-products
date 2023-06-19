@@ -4,7 +4,7 @@ import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import ProductList from "./ProductList";
 import NotFound from "./NotFound";
-import LoadingScreen from "./LoadingScreen.Jsx";
+import LoadingScreen from "./LoadingScreen.jsx";
 
 
 const Invoice = () => {
