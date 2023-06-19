@@ -24,6 +24,7 @@ const SvgComponent = (props) => (
 const Search = () => {
   const [searchText, setSearchText] = useState("");
   const navigate = useNavigate();
+  const minLength = 4;
 
   const handleInputChange = (e) => {
     setSearchText(e.target.value);
@@ -32,6 +33,11 @@ const Search = () => {
   const handleSearch = () => {
     // Perform search logic here
     navigate(`order/${searchText}`);
+  };
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter' && searchText.length >= minLength) {
+      handleSearch();
+    }
   };
   console.log(searchText);
 
@@ -50,6 +56,7 @@ const Search = () => {
                 className="h-[100%] px-[10px]"
                 placeholder="Enter search query"
                 value={searchText}
+                onKeyPress={handleKeyPress}
                 onChange={handleInputChange}
               />
             </div>
