@@ -22,7 +22,9 @@ h1 {
 h2 {
   font-weight: bold;
 }
-
+.btns:hover{
+  box-shadow: 2px 3px #fff;
+}
 
 
 

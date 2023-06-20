@@ -2,7 +2,7 @@
  @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
  * {
 	 -webkit-font-smoothing: antialiased;
-	 color: #acbdce;
+	 /* color: #acbdce; */
 }
 
 /* :root {

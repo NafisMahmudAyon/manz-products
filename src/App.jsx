@@ -1,7 +1,10 @@
+/* eslint-disable react/prop-types */
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import OrderList from "./components/OrderList";
 // import Home from "./components/Home";
-import Invoice from "./components/Invoice";
+/* eslint-disablenext-line react-hooks/exhaustive-deps */
+import Invoices from "./components/Invoices";
 // import OrderList from "./components/OrderList";
 // import HomeMobile from "./components/HomeMobile";
 import HomePage from "./components/HomePage";
@@ -21,7 +24,7 @@ function App() {
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="invoice/" element={<Search />} />
-        <Route path="invoice/order/:id/" element={<Invoice />} />
+        <Route path="invoice/order/:id/" element={<Invoices />} />
       </Routes>
       <MessengerCustomerChat
         pageId="118142634620388"

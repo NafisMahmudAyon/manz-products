@@ -16,6 +16,7 @@ const SingleProductMobile = ({ orders }) => {
 
   const id = orders - 1;
   const [colors, setColors] = useState([]);
+  const [backColors, setBackColors] = useState([]);
   // const [value, setValue] = useState('2');
   // setValue(orders);
   // console.log(props.orders);
@@ -34,8 +35,10 @@ const SingleProductMobile = ({ orders }) => {
       // .get("https://manz.nafisbd.com/db.json")
       .get("../db.json")
       .then(function (response) {
-        console.log(response.data.colors);
-        setColors(response.data.colors);
+        console.log(response.data.products[`${id}`].color);
+        setColors(response.data.products[`${id}`].color);
+        console.log("back"+ response.data.products[`${id}`].backColor);
+        setBackColors(response.data.products[`${id}`].backColor);
       });
   }
 
@@ -119,7 +122,7 @@ const SingleProductMobile = ({ orders }) => {
       <div className="px-24 flex sm:px-0 sm:flex-col md:flex-col lg:items-center lg:justify-center max-w-[1024px] sm:w-full min-h-[420px] sm:min-h-full ">
         <div
           className=" w-1/2 sm:w-full relative  drop-shadow-md drop-shadow-sky-700 rounded-l-lg sm:rounded-tr-lg sm:rounded-bl-none sm:rounded-tl-lg sm:!h-[420px] "
-          style={{ backgroundColor: colored?.color }}
+          style={{ backgroundColor: colors }}
         >
           <div className="w-full  overflow-hidden absolute top-[100px]">
             <SVGa className="" />
@@ -133,7 +136,7 @@ const SingleProductMobile = ({ orders }) => {
         </div>
         <div
           className="pl-7 pr-5 sm:px-5 py-5 w-1/2 sm:w-full   flex flex-col justify-between gap-3 content-between rounded-r-lg sm:rounded-bl-lg sm:rounded-br-lg sm:rounded-r-none"
-          style={{ backgroundColor: colored?.backColor }}
+          style={{ backgroundColor: backColors }}
         >
           <div>
             <h1 className="text-4xl font-extrabold text-slate-800">
@@ -173,13 +176,13 @@ const SingleProductMobile = ({ orders }) => {
                         {sizesId === size.id-1 ? (
                           <div
                             className="border-2 rounded-md hover:opacity-90 p-3 cursor-pointer"
-                            style={{ backgroundColor: colored?.color, borderColor: "black" }}
+                            style={{ backgroundColor: colors, borderColor: "black" }}
                             onClick={handleSize.bind(null, size.id - 1)}
                           >{size.sizeTitle}</div>
                         ) : (
                           <div
                             className="border-2 border-transparent rounded-md hover:opacity-90 p-3 cursor-pointer"
-                            style={{ backgroundColor: colored?.color }}
+                            style={{ backgroundColor: colors }}
                             onClick={handleSize.bind(null, size.id - 1)}
                           >
                             {size.sizeTitle}
@@ -198,7 +201,7 @@ const SingleProductMobile = ({ orders }) => {
                         key={color.id}
                         className="p-4 rounded-full"
                         title={color.status}
-                        style={{ backgroundColor: color?.color }}
+                        style={{ backgroundColor: colors }}
                       ></div>
                     );
                   })
@@ -220,19 +223,19 @@ const SingleProductMobile = ({ orders }) => {
               <div className="flex justify-between pr-6">
                 <p
                   className="text-5xl text-slate-400 font-bold"
-                  style={{ color: colored?.color }}
+                  style={{ color: colors }}
                 >
                   {" "}
                   <span className="font-black text-2xl">৳</span> {detailsPrice}{" "}
                 </p>
                 <div
                   className="p-[2px] border-2  rounded-full"
-                  style={{ borderColor: colored?.color }}
+                  style={{ borderColor: colors }}
                 >
                   <button
                     onClick={handleButtonClick}
                     className="px-5 py-2 relative text-lg font-semibold hover:text-white hover:bg-sky-600 transition-all duration-300  rounded-full "
-                    style={{ backgroundColor: colored?.color }}
+                    style={{ backgroundColor: colors }}
                   >
                     Buy Now
                   </button>

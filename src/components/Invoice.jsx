@@ -4,7 +4,7 @@ import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import ProductList from "./ProductList";
 import NotFound from "./NotFound";
-import LoadingScreen from "./LoadingScreen.jsx";
+// import LoadingScreen from "./LoadingScreen.jsx";
 
 
 const Invoice = () => {
@@ -12,14 +12,14 @@ const Invoice = () => {
   const [detail, setDetail] = useState({});
   const { id } = useParams();
   // const navigate = useNavigate();
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    // Simulating a delay for demonstration purposes
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000); // 2000 milliseconds = 2 seconds (you can adjust this time as needed)
-  }, []);
+  // useEffect(() => {
+  //   // Simulating a delay for demonstration purposes
+  //   setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 2000); // 2000 milliseconds = 2 seconds (you can adjust this time as needed)
+  // }, []);
 
   useEffect(() => {
     getOrder();
@@ -67,7 +67,7 @@ const Invoice = () => {
 
     return (
       <div className="w-[100%] min-h-[100vh] bg-[#0E2954] flex justify-center ">
-        {isLoading ? (<LoadingScreen />) : 
+        
         <div className="w-[80%] sm:w-[90%] md:w-[90%] my-14 sm:my-8 border sm:border-none py-10 sm:py-2 max-h-[80%] relative">
           {/* <div className="absolute top-6 left-6 sm:top-2 sm:left-2">
             {" "}
@@ -196,7 +196,7 @@ const Invoice = () => {
               </div>
             </div>
           </footer>
-        </div>}
+        </div>
       </div>
             
     );

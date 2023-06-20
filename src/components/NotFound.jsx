@@ -204,18 +204,18 @@ const NotFound = () => {
             <NotFoundSVG className="svg animate-pulse " />
           </div>
           <div className="w-1/2 sm:w-full text-slate-900 sm:justify-center ">
-            <h1 className="text-7xl text-center">404</h1>
-            <h2>UH OH! You&apos;re lost.</h2>
-            <p>
+            <h1 className="text-7xl text-white text-center">404</h1>
+            <h2 className=" text-white">UH OH! You&apos;re lost.</h2>
+            <p className=" text-white">
               Your Invoice No is not correct. Please Go to our Home Page or Go
               to search page to to search with a valid Invoice no.
             </p>
             <div className="flex gap-6 justify-center mt-4">
               <Link to="/">
-                <button className="px-8 border py-2 rounded-lg ">HOME</button>
+                <button className="btns text-white px-8 border py-2 rounded-lg ">HOME</button>
               </Link>
               <Link to="/invoice">
-                <button className="px-8 border py-2 rounded-lg ">
+                <button className="btns text-white px-8 border py-2 rounded-lg  hover:ease-in-out hover:duration-300 ">
                   Search Again
                 </button>
               </Link>

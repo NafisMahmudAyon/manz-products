@@ -12,6 +12,8 @@
             "background": "red",
             "new": 1,
             "image": "/pdt1.png",
+            "color": "#a855f7",
+            "backcolor":"#e9d5ff",
             "sizes": [
                 {
                     "id": "1",
@@ -117,6 +119,9 @@
             "background": "black",
             "new": 0,
             "image": "/pdt2.png",
+            
+            "color": "#f97316",
+            "backColor": "#fed7aa",
             "sizes": [
                 {
                     "id": "1",
@@ -222,6 +227,8 @@
             "background": "red",
             "new": 1,
             "image": "/pdt3.png",
+            "color": "#eab308",
+            "backColor": "#fef08a",
             "sizes": [
                 {
                     "id": "1",
@@ -317,7 +324,7 @@
         },
         {
             "id": "4",
-            "name": "T-Shirt-1",
+            "name": "T-Shirt-4",
             "category": "T-Shirts",
             "productCode": "1010",
             "description": "T-Shirt",
@@ -327,6 +334,8 @@
             "background": "red",
             "new": 1,
             "image": "/pdt1.png",
+            "color": "#10b981",
+            "backColor": "#a7f3d0",
             "sizes": [
                 {
                     "id": "1",
@@ -422,7 +431,7 @@
         },
         {
             "id": "5",
-            "name": "T-Shirt-2",
+            "name": "T-Shirt-5",
             "category": "T-Shirts",
             "productCode": "1011",
             "description": "T-Shirt",
@@ -432,6 +441,8 @@
             "background": "black",
             "new": 0,
             "image": "/pdt2.png",
+            "color": "#14b8a6",
+            "backColor": "#99f6e4",
             "sizes": [
                 {
                     "id": "1",
@@ -527,7 +538,7 @@
         },
         {
             "id": "6",
-            "name": "T-Shirt-3",
+            "name": "T-Shirt-6",
             "category": "T-Shirts",
             "productCode": "1012",
             "description": "T-Shirt",
@@ -537,6 +548,8 @@
             "background": "red",
             "new": 1,
             "image": "/pdt3.png",
+            "color": "#06b6d4",
+            "backColor": "#a5f3fc",
             "sizes": [
                 {
                     "id": "1",
@@ -632,7 +645,7 @@
         },
         {
             "id": "7",
-            "name": "T-Shirt-1",
+            "name": "T-Shirt-7",
             "category": "T-Shirts",
             "productCode": "1010",
             "description": "T-Shirt",
@@ -642,6 +655,8 @@
             "background": "red",
             "new": 1,
             "image": "/pdt1.png",
+            "color": "#a855f7",
+            "backColor": "#e9d5ff",
             "sizes": [
                 {
                     "id": "1",
@@ -737,7 +752,7 @@
         },
         {
             "id": "8",
-            "name": "T-Shirt-2",
+            "name": "T-Shirt-8",
             "category": "T-Shirts",
             "productCode": "1011",
             "description": "T-Shirt",
@@ -747,6 +762,8 @@
             "background": "black",
             "new": 0,
             "image": "/pdt2.png",
+            "color": "#f97316",
+            "backColor": "#fed7aa",
             "sizes": [
                 {
                     "id": "1",
@@ -842,7 +859,7 @@
         },
         {
             "id": "9",
-            "name": "T-Shirt-3",
+            "name": "T-Shirt-9",
             "category": "T-Shirts",
             "productCode": "1012",
             "description": "T-Shirt",
@@ -852,6 +869,8 @@
             "background": "red",
             "new": 1,
             "image": "/pdt3.png",
+            "color": "#eab308",
+            "backColor": "#fef08a",
             "sizes": [
                 {
                     "id": "1",
@@ -947,7 +966,7 @@
         },
         {
             "id": "10",
-            "name": "T-Shirt-1",
+            "name": "T-Shirt-10",
             "category": "T-Shirts",
             "productCode": "1010",
             "description": "T-Shirt",
@@ -957,6 +976,8 @@
             "background": "red",
             "new": 1,
             "image": "/pdt1.png",
+            "color": "#10b981",
+            "backColor": "#a7f3d0",
             "sizes": [
                 {
                     "id": "1",
@@ -1052,7 +1073,7 @@
         },
         {
             "id": "11",
-            "name": "T-Shirt-2",
+            "name": "T-Shirt-11",
             "category": "T-Shirts",
             "productCode": "1011",
             "description": "T-Shirt",
@@ -1062,6 +1083,8 @@
             "background": "black",
             "new": 0,
             "image": "/pdt2.png",
+            "color": "#14b8a6",
+            "backColor": "#99f6e4",
             "sizes": [
                 {
                     "id": "1",
@@ -1157,7 +1180,7 @@
         },
         {
             "id": "12",
-            "name": "T-Shirt-3",
+            "name": "T-Shirt-12",
             "category": "T-Shirts",
             "productCode": "1012",
             "description": "T-Shirt",
@@ -1167,6 +1190,115 @@
             "background": "red",
             "new": 1,
             "image": "/pdt3.png",
+            "color": "#06b6d4",
+            "backColor": "#a5f3fc",
+            "sizes": [
+                {
+                    "id": "1",
+                    "sizeTitle": "S",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "300",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4",
+                            "status": "Available"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981",
+                            "status": "Available"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6",
+                            "status": "Available"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "sizeTitle": "M",
+                    "in_stock": 0,
+                    "status": "Not Available",
+                    "price": "400",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4",
+                            "status": "Available"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981",
+                            "status": "Available"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6",
+                            "status": "Available"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "sizeTitle": "L",
+                    "in_stock": 1,
+                    "status": "Available",
+                    "price": "500",
+                    "colors": [
+                        {
+                            "id": 1,
+                            "color": "#06b6d4",
+                            "status": "Available"
+                        },
+                        {
+                            "id": 2,
+                            "color": "#10b981",
+                            "status": "Available"
+                        },
+                        {
+                            "id": 3,
+                            "color": "#3b82f6",
+                            "status": "Available"
+                        }
+                    ]
+                }
+            ],
+            "images": [
+                {
+                    "id": 1,
+                    "link": "https://i.ibb.co/ctqDbv2/pngegg-5.png"
+                },
+                {
+                    "id": 2,
+                    "link": "https://i.ibb.co/pvgg4n3/pngegg-4.png"
+                },
+                {
+                    "id": 3,
+                    "link": "https://i.ibb.co/c35P2B5/pngegg-3.png"
+                },
+                {
+                    "id": 4,
+                    "link": "https://i.ibb.co/h8jsRX6/pngegg-2.png"
+                }
+            ]
+        },
+        {
+            "id": "13",
+            "name": "T-Shirt-13",
+            "category": "T-Shirts",
+            "productCode": "1012",
+            "description": "T-Shirt",
+            "price": "350",
+            "in_stock": 1,
+            "status": "Available",
+            "background": "red",
+            "new": 1,
+            "image": "/pdt3.png",
+            "color": "#a855f7",
+            "backColor": "#e9d5ff",
             "sizes": [
                 {
                     "id": "1",

@@ -5,44 +5,34 @@ import axios from "axios";
 import Navbar from "./Navbar";
 import SingleProductMobile from "./SingleProductMobile";
 
-// import MessengerCustomerChat from "react-messenger-customer-chat";
-// import MessengerChat from "./MessengerChat";
-// import SingleProductMobile from "./SingleProductMobile";
-
 function HomeMobile() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [productsPerPage] = useState(6);
   const [orders, setOrders] = useState("1");
   const [products, setProducts] = useState([]);
-  // const id= orders-1;
   const [colors, setColors] = useState([]);
   const [popupVisible, setPopupVisible] = useState(false);
+
   useEffect(() => {
     getColor();
     getProduct();
   }, []);
-  console.log(colors[orders]?.color);
+
   function getColor() {
-    axios
-      // .get("https://manz-orders-server.onrender.com/color")
-      // .get("https://manz.nafisbd.com/db.json")
-      .get("../db.json")
-      .then(function (response) {
-        setColors(response.data.colors);
-      });
+    axios.get("../db.json").then(function (response) {
+      setColors(response.data.colors);
+    });
   }
+
   function getProduct() {
-    // axios.get("https://manz-orders-server.onrender.com/products").then(function (response) {
-    // axios.get("https://manz.nafisbd.com/db.json").then(function (response) {
-    axios.get("/db.json").then(function (response) {
+    axios.get("../db.json").then(function (response) {
       setProducts(response.data.products);
     });
   }
 
-  // const handleElementClick = () => {
   const handleElementClick = (productId) => {
     setOrders(productId);
     setPopupVisible(true);
-    console.log("clicked");
-    console.log(orders);
   };
 
   const handlePopupClose = () => {
@@ -79,78 +69,68 @@ function HomeMobile() {
     </svg>
   );
 
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+
+  const pageNumbers = Math.ceil(products.length / productsPerPage);
+
   return (
     <div className="bg-[#0E2954] min-h-screen">
-      <div className="z-[1000] sm:block md:block sm:static sticky top-0 py-4  bg-[#0E2954]">
+      <div className="z-[1000] sm:block md:block sm:static sticky top-0 py-4 bg-[#0E2954]">
         <Navbar />
       </div>
-      {/* <SingleProductMobile orders={orders} /> */}
+
       {popupVisible && (
         <div className="fixed inset-0 z-[1001] overflow-auto overflow-x-hidden">
-          {/* <div className="relative "> */}
           <button
-            className="text-white  z-[1115]  font-semibold text-5xl rounded-full absolute top-2 right-4 "
+            className="text-white z-[1115] font-semibold text-5xl rounded-full absolute top-2 right-4"
             onClick={handlePopupClose}
           >
             &times;
           </button>
 
-          {/* <div className="mt-4"> */}
-          {/* {orders} */}
           <SingleProductMobile orders={orders} />
-          {/* </div> */}
         </div>
-        // </div>
       )}
+
       <div>
-        <div className="p-18 flex flex-wrap items-center justify-center overflow-auto overflow-x-hidden ">
-          {Array.isArray(products)
-            ? products.map((product, index) => {
-                // const length = colors?.length();
+        <div className="p-18 flex flex-wrap items-center justify-center overflow-auto overflow-x-hidden">
+          {Array.isArray(currentProducts)
+            ? currentProducts.map((product, index) => {
                 const color = colors?.[index % colors.length];
                 const stock = product.in_stock;
                 const newed = product.new;
-                // const productId = product.id;
+
                 return (
                   <div
                     key={index}
                     style={{ backgroundColor: color?.color }}
-                    className="flex-shrink-0 m-6 relative overflow-hidden  rounded-lg max-w-xs shadow-lg"
+                    className="flex-shrink-0 m-6 relative overflow-hidden rounded-lg max-w-xs shadow-lg"
                   >
-                    {/* <button onClick={() => setOrder(product.id)}> */}
                     <button onClick={handleElementClick.bind(null, product.id)}>
-                      <div className="absolute top-2 left-2 z-50 ">
+                      <div className="absolute top-2 left-2 z-50">
                         {stock === 1 ? (
-                          <div
-                            className="iconDiv relative"
-                            title={product.status}
-                            tabIndex="0"
-                          >
-                            <div className="iconSVG ">
-                              <p className="bg-white px-2  py-2 rounded-full"></p>
+                          <div className="iconDiv relative" title={product.status} tabIndex="0">
+                            <div className="iconSVG">
+                              <p className="bg-white px-2 py-2 rounded-full"></p>
                             </div>
                           </div>
                         ) : (
-                          <div
-                            className="iconDiv relative"
-                            title={product.status}
-                            tabIndex="0"
-                          >
-                            <div className="iconSVG ">
-                              <p className="bg-red-500 px-2  py-2 rounded-full"></p>
+                          <div className="iconDiv relative" title={product.status} tabIndex="0">
+                            <div className="iconSVG">
+                              <p className="bg-red-500 px-2 py-2 rounded-full"></p>
                             </div>
                           </div>
                         )}
                       </div>
                       {newed === 1 ? (
                         <div className="absolute top-2 right-2">
-                          <div className="inline-block  relative">
+                          <div className="inline-block relative">
                             <p className="text-sm inline-block pr-[5px] text-black font-semibold">
                               new
                             </p>{" "}
-                            <span className="absolute top-0 right-0 text-[10px] animate-ping">
-                              🌟
-                            </span>
+                            <span className="absolute top-0 right-0 text-[10px] animate-ping">🌟</span>
                           </div>
                         </div>
                       ) : null}
@@ -165,16 +145,11 @@ function HomeMobile() {
                         />
                       </div>
                       <div className="relative text-white px-6 pb-6 mt-6">
-                        <span className="block opacity-75 text-sm -mb-1">
-                          {product.category}
-                        </span>
+                        <span className="block opacity-75 text-sm -mb-1">{product.category}</span>
                         <div className="flex justify-between">
-                          <span className="block font-semibold text-xl">
-                            {product.name}
-                          </span>
-                          <div className=" z-20 bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">
-                            <span className="font-black text-[12px]">৳</span>{" "}
-                            {product.price}
+                          <span className="block font-semibold text-xl">{product.name}</span>
+                          <div className="z-20 bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">
+                            <span className="font-black text-[12px]">৳</span> {product.price}
                           </div>
                         </div>
                       </div>
@@ -185,11 +160,21 @@ function HomeMobile() {
             : null}
         </div>
       </div>
-      {/* <MessengerCustomerChat
-        pageId="118142634620388"
-        appId="1325514468346747"
-      /> */}
-      {/* <MessengerChat /> */}
+
+      <div className="flex justify-center mt-4">
+        {Array.from({ length: pageNumbers }, (_, index) => (
+          <button
+            key={index}
+            className={`mx-2 px-4 py-2 rounded-full ${
+              currentPage === index + 1 ? "bg-white text-black" : 
+              "bg-gray-500 text-white hover:bg-white hover:text-black hover:outline-offset-4 hover:outline-white hover:outline hover:outline-2 hover:ease-in hover:duration-300 "
+            }`}
+            onClick={() => setCurrentPage(index + 1)}
+          >
+            {index + 1}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
